@@ -1,0 +1,28 @@
+{
+  "name": "unionpedia-extractor",
+  "version": "0.0.1",
+  "description": "Extract incoming and outgoing relations for a concept from unionpedia.org",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mastercuber/unionpedia-extractor.git"
+  },
+  "keywords": [
+    "unionpedia",
+    "extract",
+    "relations",
+    "concept"
+  ],
+  "author": "armandos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mastercuber/unionpedia-extractor/issues"
+  },
+  "homepage": "https://github.com/mastercuber/unionpedia-extractor#readme",
+  "dependencies": {
+    "jsdom": "^15.2.1"
+  }
+}
