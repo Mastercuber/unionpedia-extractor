@@ -1,7 +1,12 @@
-const { JSDOM } = require('jsdom');
+const { JSDOM } = require('jsdom')
 
 const Unionpedia = (() => {
-  let _url = 'https://en.unionpedia.org/';
+  let _url = 'https://en.unionpedia.org/'
+
+  // Cache for the concept itself and the outgoing edges
+  const _cache = {}
+  // Cache for the incoming edges
+  const _cacheIncoming = {}
 
   function Unionpedia(url) {
     if (url) {
@@ -10,13 +15,18 @@ const Unionpedia = (() => {
   }
 
   async function getDocument (concept, incoming = false) {
-    let jsdom
     if (incoming) {
-      jsdom = await JSDOM.fromURL(`${_url}i/${concept}`)
-    } else {
-      jsdom = await JSDOM.fromURL(`${_url}${concept}`)
+      if (concept in _cacheIncoming) return _cacheIncoming[concept].window.document
+
+      _cacheIncoming[concept] = await JSDOM.fromURL(`${_url}i/${concept}`)
+      return _cacheIncoming[concept].window.document
     }
-    return jsdom.window.document
+
+    if (concept in _cache) return _cache[concept].window.document
+
+    _cache[concept] = await JSDOM.fromURL(`${_url}${concept}`)
+
+    return _cache[concept].window.document
   }
   function getConceptDescription (document) {
     return document.querySelector('.page-title + p').textContent
@@ -27,55 +37,36 @@ const Unionpedia = (() => {
     return document.querySelector('.page-title h1').textContent
   }
   function getLinks (document) {
-    const relationsIndex = document.getElementById('relations-index');
-    return Array.from(relationsIndex.querySelectorAll('a'));
-  }
-  async function getConceptObjects (baseConcept, links, withDescription) {
-    const conceptObjects = await Promise.all(
-      links.map(async (el) => {
+    const relationsIndex = document.getElementById('relations-index')
+    const dots = document.getElementById('dots-content')
+    relationsIndex.removeChild(dots)
 
-        if (!el.href.startsWith('javascript')) {
-          const conceptObject = { href: el.href, title: el.text}
-
-          if (withDescription) {
-            const jsdom = await JSDOM.fromURL(el.href.replace(`${baseConcept}#`, ''));
-            const document = jsdom.window.document;
-            const description = document.querySelector('.page-title + p').textContent;
-            conceptObject.description = description;
-          }
-
-          return conceptObject
-        }
-
-      })
-    );
-
-    return conceptObjects;
+    return Array.from(relationsIndex.querySelectorAll('a:not(#show-all):not(#show-less)'))
   }
 
   Unionpedia.prototype.getConceptObject = async function (concept) {
     const document = await getDocument(concept)
-    const description = getConceptDescription(document);
-    const title = getTitle(document);
+    const description = getConceptDescription(document)
+    const title = getTitle(document)
 
     return { href: document.documentURI, title: title, description: description }
   }
 
-  Unionpedia.prototype.getIncomingRelations = async function (concept, withDescription = false) {
-    const incomingDocument = await getDocument(concept, true);
-    const incomingLinks = getLinks(incomingDocument);
-    const conceptObjects = await getConceptObjects(concept, incomingLinks, withDescription);
-    return conceptObjects
+  Unionpedia.prototype.getIncomingRelations = async function (concept) {
+    const incomingDocument = await getDocument(concept, true)
+    const incomingLinks = getLinks(incomingDocument)
+
+    return incomingLinks.map(link => {return {href: link.href, title: link.text }})
   };
 
-  Unionpedia.prototype.getOutgoingRelations = async function (concept, withDescription = false) {
-    const outgoingDocument = await getDocument(concept);
-    const outgoingLinks = getLinks(outgoingDocument);
-    const conceptObjects = await getConceptObjects(concept, outgoingLinks, withDescription);
-    return conceptObjects;
-  };
+  Unionpedia.prototype.getOutgoingRelations = async function (concept) {
+    const outgoingDocument = await getDocument(concept)
+    const outgoingLinks = getLinks(outgoingDocument)
+
+    return outgoingLinks.map(link => {return {href: link.href, title: link.text }})
+  }
 
   return Unionpedia;
-})();
+})()
 
 module.exports = Unionpedia
