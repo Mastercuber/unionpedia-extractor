@@ -1,6 +1,6 @@
 {
   "name": "unionpedia-extractor",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Extract incoming and outgoing relations for a concept from unionpedia.org",
   "main": "index.js",
   "scripts": {

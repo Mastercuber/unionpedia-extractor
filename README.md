@@ -15,7 +15,7 @@ const union = new Unionpedia('https://de.unionpedia.org');
 
 ## API
 One concept is represented as an JSON Object:
-``` json
+``` javascript
 {
   href: 'https://en.unionpedia.org/Computer science',
   title: 'Computer science',
