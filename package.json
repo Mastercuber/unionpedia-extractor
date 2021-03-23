@@ -1,6 +1,6 @@
 {
   "name": "unionpedia-extractor",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Extract incoming and outgoing relations for a concept from unionpedia.org",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,10 @@
     "url": "https://github.com/mastercuber/unionpedia-extractor/issues"
   },
   "homepage": "https://github.com/mastercuber/unionpedia-extractor#readme",
+  "engines": {
+    "node": ">= 10"
+  },
   "dependencies": {
-    "jsdom": "^15.2.1"
+    "jsdom": "^16.5.1"
   }
 }
