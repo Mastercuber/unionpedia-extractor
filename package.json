@@ -1,0 +1,47 @@
+{
+  "name": "unionpedia-extractor",
+  "version": "3.0.0",
+  "description": "Extract incoming and outgoing relations for a concept from unionpedia.org",
+  "main": "src/extractor.cheerio.js",
+  "files": [
+    "src/extractor.cheerio.js"
+  ],
+  "scripts": {
+    "test": "jest ./test/extractor.test.js",
+    "test:jsdom": "jest ./test/extractor.jsdom.test.js",
+    "test:performance": "node test/performance-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mastercuber/unionpedia-extractor.git"
+  },
+  "keywords": [
+    "unionpedia",
+    "extract",
+    "relations",
+    "concept"
+  ],
+  "author": "armandos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mastercuber/unionpedia-extractor/issues"
+  },
+  "homepage": "https://github.com/mastercuber/unionpedia-extractor#readme",
+  "engines": {
+    "node": ">= 16"
+  },
+  "publishConfig": {
+    "registry": "https://repo.avensio.de/repository/npm-hosted/"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "follow-redirects": "^1.15.1",
+    "lru-cache": "^7.14.1"
+  },
+  "devDependencies": {
+    "@types/follow-redirects": "^1.14.1",
+    "@types/jest": "^29.2.5",
+    "jest": "^29.3.1",
+    "jsdom": "^21.0.0"
+  }
+}
