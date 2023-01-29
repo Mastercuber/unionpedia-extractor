@@ -1,5 +1,38 @@
-const Unionpedia = require('../src/extractor.jsdom');
+import Unionpedia from '../src/extractor.cheerio'
+import fs from 'fs'
 jest.setTimeout(10000)
+
+jest.mock('../src/extractor.cheerio', () => {
+  const originalModule = jest.requireActual('../src/extractor.cheerio');
+  originalModule.default.prototype.fetchHtml =
+    jest.fn((url: string) => {
+      if (url.endsWith('this_concept_does_not_exist!!!!') || url.endsWith('asdasdasdasd')) {
+        return ''
+      }
+      if (url.endsWith('Computer_Science')) {
+        return fs.readFileSync('./test/data/Computer Science.html')
+      }
+      if (url.endsWith('Informatik')) {
+        return fs.readFileSync('./test/data/Informatik.html')
+      }
+      if (url.endsWith('i/Aiwa')) {
+        return fs.readFileSync('./test/data/Incoming-Aiwa.html')
+      } else if (url.endsWith('Aiwa')) {
+        return fs.readFileSync('./test/data/Aiwa.html')
+      }
+      if (url.endsWith('i/Ada_Lovelace')) {
+        return fs.readFileSync('./test/data/Incoming-Ada Lovelace.html')
+      }
+      if (url.endsWith('Ada_Lovelace')) {
+        return fs.readFileSync('./test/data/Ada Lovelace.html')
+      }
+    })
+
+  return {
+    __esModule: true,
+    ...originalModule
+  };
+});
 
 describe('Extractor Tests', function () {
   const union = new Unionpedia('https://en.unionpedia.org')
@@ -15,11 +48,6 @@ describe('Extractor Tests', function () {
     it('should throw errors, when the concept is not a string, null or undefined', async function () {
       await expect(union.getConceptObject(undefined)).rejects.toEqual('Concept not a string')
       await expect(union.getConceptObject(null)).rejects.toEqual('Concept not a string')
-      await expect(union.getConceptObject(false)).rejects.toEqual('Concept not a string')
-      await expect(union.getConceptObject(true)).rejects.toEqual('Concept not a string')
-      await expect(union.getConceptObject({})).rejects.toEqual('Concept not a string')
-      await expect(union.getConceptObject([])).rejects.toEqual('Concept not a string')
-      await expect(union.getConceptObject(123)).rejects.toEqual('Concept not a string')
     });
 
     it('should receive an object for an existing concept', async function () {
@@ -58,19 +86,9 @@ describe('Extractor Tests', function () {
     it('should throw errors when the concept is not a string, null or undefined', async function () {
       await expect(union.getOutgoingRelations(undefined)).rejects.toEqual('Concept not a string')
       await expect(union.getOutgoingRelations(null)).rejects.toEqual('Concept not a string')
-      await expect(union.getOutgoingRelations(false)).rejects.toEqual('Concept not a string')
-      await expect(union.getOutgoingRelations(true)).rejects.toEqual('Concept not a string')
-      await expect(union.getOutgoingRelations({})).rejects.toEqual('Concept not a string')
-      await expect(union.getOutgoingRelations([])).rejects.toEqual('Concept not a string')
-      await expect(union.getOutgoingRelations(123)).rejects.toEqual('Concept not a string')
 
       await expect(union.getIncomingRelations(undefined)).rejects.toEqual('Concept not a string')
       await expect(union.getIncomingRelations(null)).rejects.toEqual('Concept not a string')
-      await expect(union.getIncomingRelations(false)).rejects.toEqual('Concept not a string')
-      await expect(union.getIncomingRelations(true)).rejects.toEqual('Concept not a string')
-      await expect(union.getIncomingRelations({})).rejects.toEqual('Concept not a string')
-      await expect(union.getIncomingRelations([])).rejects.toEqual('Concept not a string')
-      await expect(union.getIncomingRelations(123)).rejects.toEqual('Concept not a string')
     });
     it('should receive a non empty relations array for an existing concept', async function () {
       const outgoing = await union.getOutgoingRelations('Aiwa')
@@ -90,14 +108,14 @@ describe('Extractor Tests', function () {
       await union.getConceptObject(concept)
       let end = process.hrtime.bigint()
       let elapsedTime = (end - start) / NS_PER_MILLI_SEC
-      expect(elapsedTime).toBeGreaterThan(50n)
+      expect(elapsedTime).toBeGreaterThan(30n)
       console.log('first fetch', elapsedTime, 'ms')
 
       let start2 = process.hrtime.bigint()
       await union.getConceptObject(concept)
       let end2 = process.hrtime.bigint()
       let elapsedTime2 = (end2 - start2) / NS_PER_MILLI_SEC
-      expect(elapsedTime2).toBeLessThan(50n)
+      expect(elapsedTime2).toBeLessThan(10n)
       console.log('second fetch', elapsedTime2, 'ms')
     });
     it('should use a cached document for fetching outgoing relations', async function () {
@@ -106,7 +124,7 @@ describe('Extractor Tests', function () {
       let end = process.hrtime.bigint()
       let elapsedTime = (end - start) / NS_PER_MILLI_SEC
       expect(relations.length).toBeGreaterThan(0)
-      expect(elapsedTime).toBeLessThan(100n)
+      expect(elapsedTime).toBeLessThan(50n)
       console.log('fetch outgoing in', elapsedTime, 'ms')
     });
     it('should fetch a new document for fetching incoming relations the first time', async function () {

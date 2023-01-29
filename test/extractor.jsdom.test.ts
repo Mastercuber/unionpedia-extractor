@@ -1,5 +1,37 @@
-const Unionpedia = require('../src/extractor.cheerio');
+import Unionpedia from '../src/extractor.jsdom'
+import { JSDOM } from 'jsdom'
 jest.setTimeout(10000)
+
+jest.mock('jsdom', () => {
+  const originalModule = jest.requireActual('jsdom');
+  originalModule.JSDOM.fromURL = jest.fn((url: string) => {
+    if (url.endsWith('this concept does not exist!!!!') || url.endsWith('asdasdasdasd')) {
+      return JSDOM.fromFile('./test/data/Empty.html')
+    }
+    if (url.endsWith('Computer Science')) {
+      return JSDOM.fromFile('./test/data/Computer Science.html')
+    }
+    if (url.endsWith('Informatik')) {
+      return JSDOM.fromFile('./test/data/Informatik.html')
+    }
+    if (url.endsWith('i/Aiwa')) {
+      return JSDOM.fromFile('./test/data/Incoming-Aiwa.html')
+    } else if (url.endsWith('Aiwa')) {
+      return JSDOM.fromFile('./test/data/Aiwa.html')
+    }
+    if (url.endsWith('i/Ada_Lovelace')) {
+      return JSDOM.fromFile('./test/data/Incoming-Ada Lovelace.html')
+    }
+    if (url.endsWith('Ada Lovelace')) {
+      return JSDOM.fromFile('./test/data/Ada Lovelace.html')
+    }
+  })
+
+  return {
+    __esModule: true,
+    ...originalModule
+  };
+});
 
 describe('Extractor Tests', function () {
   const union = new Unionpedia('https://en.unionpedia.org')
@@ -15,11 +47,6 @@ describe('Extractor Tests', function () {
     it('should throw errors, when the concept is not a string, null or undefined', async function () {
       await expect(union.getConceptObject(undefined)).rejects.toEqual('Concept not a string')
       await expect(union.getConceptObject(null)).rejects.toEqual('Concept not a string')
-      await expect(union.getConceptObject(false)).rejects.toEqual('Concept not a string')
-      await expect(union.getConceptObject(true)).rejects.toEqual('Concept not a string')
-      await expect(union.getConceptObject({})).rejects.toEqual('Concept not a string')
-      await expect(union.getConceptObject([])).rejects.toEqual('Concept not a string')
-      await expect(union.getConceptObject(123)).rejects.toEqual('Concept not a string')
     });
 
     it('should receive an object for an existing concept', async function () {
@@ -58,19 +85,9 @@ describe('Extractor Tests', function () {
     it('should throw errors when the concept is not a string, null or undefined', async function () {
       await expect(union.getOutgoingRelations(undefined)).rejects.toEqual('Concept not a string')
       await expect(union.getOutgoingRelations(null)).rejects.toEqual('Concept not a string')
-      await expect(union.getOutgoingRelations(false)).rejects.toEqual('Concept not a string')
-      await expect(union.getOutgoingRelations(true)).rejects.toEqual('Concept not a string')
-      await expect(union.getOutgoingRelations({})).rejects.toEqual('Concept not a string')
-      await expect(union.getOutgoingRelations([])).rejects.toEqual('Concept not a string')
-      await expect(union.getOutgoingRelations(123)).rejects.toEqual('Concept not a string')
 
       await expect(union.getIncomingRelations(undefined)).rejects.toEqual('Concept not a string')
       await expect(union.getIncomingRelations(null)).rejects.toEqual('Concept not a string')
-      await expect(union.getIncomingRelations(false)).rejects.toEqual('Concept not a string')
-      await expect(union.getIncomingRelations(true)).rejects.toEqual('Concept not a string')
-      await expect(union.getIncomingRelations({})).rejects.toEqual('Concept not a string')
-      await expect(union.getIncomingRelations([])).rejects.toEqual('Concept not a string')
-      await expect(union.getIncomingRelations(123)).rejects.toEqual('Concept not a string')
     });
     it('should receive a non empty relations array for an existing concept', async function () {
       const outgoing = await union.getOutgoingRelations('Aiwa')
@@ -106,7 +123,7 @@ describe('Extractor Tests', function () {
       let end = process.hrtime.bigint()
       let elapsedTime = (end - start) / NS_PER_MILLI_SEC
       expect(relations.length).toBeGreaterThan(0)
-      expect(elapsedTime).toBeLessThan(50n)
+      expect(elapsedTime).toBeLessThan(100n)
       console.log('fetch outgoing in', elapsedTime, 'ms')
     });
     it('should fetch a new document for fetching incoming relations the first time', async function () {
