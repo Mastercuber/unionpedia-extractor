@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<base href="https://en.unionpedia.org/"/>
+<meta charset="UTF-8" />
+<meta name="google-site-verification" content="kilq9ljhh3HKXbm9RyT_sL6IOaJrYNIOVmL8-mctv7M" />
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Aiwa, the Glossary">
+<meta name="twitter:description" content=", is a consumer electronics company. 33 relations.">
+<meta name="twitter:image" content="https://en.unionpedia.org/static/images/unionpedia_fb_thumb.png">
+<title>Aiwa - Unionpedia, the concept map</title>
+<meta name="description" content=", is a consumer electronics company. 33 relations."/>
+<meta property="og:title" content="Aiwa, the Glossary"/>
+<meta property="og:description" content=", is a consumer electronics company. 33 relations."/>
+<meta property="og:image" content="https://en.unionpedia.org/static/images/unionpedia_fb_thumb.png"/>
+<meta name="google-signin-client_id" content="306351555599-gi55oqatstpohugn549l05i4n1lq0t0i.apps.googleusercontent.com">
+<link rel="shortcut icon" href="static/images/unionpedia.ico" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+
+<link rel="stylesheet" type="text/css" href="static/css/style-v2.css"/>
+<link rel="stylesheet" type="text/css" href="static/css/login.css"/>
+<script>var domain = 'https://en.unionpedia.org/';</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35016837-5', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script>
+function onSuccess(googleUser) {
+	var profile = googleUser.getBasicProfile();
+	console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+	console.log('Name: ' + profile.getName());
+	console.log('Image URL: ' + profile.getImageUrl());
+	console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+	var id_token = googleUser.getAuthResponse().id_token;
+	console.log('id_token: ' + id_token);
+
+
+	var xhr = new XMLHttpRequest();
+	xhr.open('POST', 'https://en.unionpedia.org/Login:');
+	xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+	xhr.onload = function() {
+		console.log('Signed in as: ' + xhr.responseText);
+	};
+	xhr.send('idtoken=' + id_token);
+
+
+}
+function onFailure(error) {
+	console.log(error);
+}
+function renderButton() {
+	gapi.signin2.render('my-signin2', {
+		'scope': 'profile email',
+		'width': 240,
+		'height': 50,
+		'longtitle': true,
+		'theme': 'dark',
+		'onsuccess': onSuccess,
+		'onfailure': onFailure
+	});
+}
+function signOut() {
+	document.getElementById('formLogout').submit();
+	return;
+	var auth2 = gapi.auth2.getAuthInstance();
+	auth2.signOut().then(function () {
+		console.log('User signed out.');
+		document.getElementById('formLogout').submit();
+	});
+}
+</script>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    bp.src = '//push.zhanzhang.baidu.com/push.js';
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<script>my_google_ad_channel = '8625877597'; // Default</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    params: { google_ad_channel: my_google_ad_channel },
+    google_ad_client: "ca-pub-5555190471190823",
+    enable_page_level_ads: true
+  });
+</script>
+</head>
+<body class="lang-ltr">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=222655474428803";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="comm" style="height: 100px; box-sizing: border-box; border-bottom: 1px solid #BBB; background-color: #FFF;">
+    <div style="display: inline-block; height: 74px; -background-color: red; box-sizing: border-box; margin: 11px 10px; margin-right: 5px; padding: 10px; padding-right: 0; cursor: default; vertical-align: top;">
+        <a href="./" style="text-decoration: none; color: #000;">
+        <img src="static/images/logo-u.png" alt="Logo" style="height: 100%; margin-right: 5px;"/>
+        <div style="display: inline-block; height: 100%; -border: 1px solid green; vertical-align: top;">
+            <img src="static/images/unionpedia_home_2019.png" alt="Unionpedia" style="height: 50%; -border: 1px solid red; padding: 0; margin: 0; margin-top: 1px;"/><br/>
+            <div style="height: 50%; display: inline-block; -border-color: blue; margin: 0; padding: 0; font-style: italic; font-size: 1.05em;">
+            <!--<img src="static/images/the_concept_map_home.png" alt="The Concept Map" title="The Concept Map" style="height: 50%;"/>-->
+            Communication            </div>
+        </div>
+        </a>
+    </div>
+
+	
+	<div style="display: inline-block; height: 100%; -background-color: red; box-sizing: border-box; padding: 2px; padding-right: 0; cursor: default;">
+		<a target="_blank" href="https://play.google.com/store/apps/details?id=org.unionpedia&utm_source=unionpedia.org&utm_campaign=desktop&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img
+			style="height: 80px; margin: 5px 0;" alt="Get it on Google Play"
+			src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
+		/></a>
+	</div>
+
+	<div style="display: inline-block; height: 100%; -background-color: red; box-sizing: border-box; padding: 2px; padding-right: 0; cursor: default; vertical-align: top;">
+		<div style="display: table; height: 100%;">
+			<div style="display: table-cell; vertical-align: middle; height: 100%; -background-color: blue; font-size: 1.1em; -color: #05A; color: #222;">
+								<style>
+					#comm-download {
+						display: inline-block;
+						background-color: #07D;
+						color: #FFF;
+						padding: 9px 13px;
+						border-radius: 3px;
+						margin-right: 10px;
+						margin-left: 10px;
+						box-shadow: 1px 1px 2px rgba(0,100,150,0.3);
+						float: right;
+						margin-top: 2px;
+												min-width: 50px;
+						text-align: center;
+					}
+					#comm-download:hover {
+						background-color: #08E;
+						text-decoration: none;
+											}
+					img.tick {
+						height: 16px;
+						width: 16px;
+						vertical-align: top;
+						margin-right: 4px;
+						margin-left: 5px;
+					}
+				</style>
+
+				<div style="font-weight: bold; margin-bottom: 7px; margin-top: -3px;"><span style="color: #F00; display: none;">New! </span>Download Unionpedia on your Android™ device!</div>
+
+				<a target="_blank" id="comm-download" href="https://play.google.com/store/apps/details?id=org.unionpedia&utm_source=unionpedia.org&utm_campaign=desktop&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">Install</a>
+
+				<div style="font-size: 0.97em; margin-bottom: 4px; overflow: hidden;"><img class="tick" alt="" src="static/images/tick.png"/>Faster access than browser!</div>
+				<div style="font-size: 0.97em; overflow: hidden;">&nbsp;<!--<img class="tick" src="static/images/tick.png"/>And Ads-free!--></div>
+				
+			</div>
+		</div>
+    </div>
+
+	</div>
+
+
+	
+
+	
+	
+
+<div id="main">
+	<div id="content">
+		<!--197125-->
+<div style="display: inline-block; margin: 0 -5px; margin-top: -5px;">
+<div style="margin: -5px; margin-top: 20px; margin-bottom: 0; -margin-bottom: -5px; -margin-left: -10px;">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Unionpedia Bottom -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-5555190471190823"
+     data-ad-slot="6041511130"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({params: {google_ad_channel: my_google_ad_channel}});
+</script>
+</div>
+</div>
+<div style="margin-top: 15px; min-width: 300px; min-height: 600px; float: right; margin-left: 10px; margin-right: -10px; margin-bottom: 20px;">
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!-- Unionpedia Right / Unionpedia Right 2 -->
+	<ins class="adsbygoogle"
+		style="display:inline-block;width:300px;height:600px"
+		data-ad-client="ca-pub-5555190471190823"
+		data-ad-slot="7013337134"></ins>
+	<script>
+	(adsbygoogle = window.adsbygoogle || []).push({params: {google_ad_channel: my_google_ad_channel}});
+	</script>
+	</div>
+<style>
+.page-title h1 {
+	display: inline-block;
+	vertical-align: middle;
+	border: 0;
+	padding-bottom: 0;
+	margin-bottom: 5px;
+	margin-top: 7px;
+	margin-right: 10px;
+}
+.page-title h2 {
+	display: inline-block;
+	vertical-align: middle;
+	border: 0;
+	padding-bottom: 0;
+	margin-bottom: 5px;
+	margin-top: 7px;
+	margin-right: 10px;
+}
+.page-title .save-button, .page-title .unsave-button {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 7px 15px;
+	margin-top: 5px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.page-title .save-button {
+	background-color: #FEA;
+	border: 1px solid rgba(0,0,0,0.05);
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.03);
+	color: #333;
+}
+.page-title .save-button:hover {
+	background-color: #FFF5AA;
+	border: 1px solid rgba(0,0,0,0.1);
+}
+.page-title .unsave-button {
+	background-color: #D5EACA;
+	border: 1px solid rgba(0,0,0,0.05);
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.03);
+	color: #888;
+}
+.page-title .unsave-button:hover {
+	background-color: #D0E0A0;
+	border: 1px solid rgba(0,0,0,0.1);
+}
+.page-title .button-small {
+	padding: 4px 8px;
+	-margin-top: 5px;
+	border-radius: 2px;
+	font-size: 12px;
+	margin: 0;
+}
+.page-title .save-button.button-small {
+	color: rgba(0,0,0,0.7);
+}
+.page-title .unsave-button.button-small {
+	color: rgba(0,0,0,0.5);
+}
+
+
+</style>
+<div  style="overflow: hidden;">
+<div class="page-title" style="display: block; border-bottom: 1px solid #BBB; padding-bottom: 5px; margin-bottom: 15px;">
+<h1 style="overflow: hidden; margin-right: 5px; vertical-align: bottom;">Aiwa</h1>
+<style>
+.index-button { border: 0; padding: 0; margin: 0; }
+.index-button:hover { opacity: 0.7; }
+</style>
+<div style="display: inline-block; vertical-align: bottom; padding-bottom: 6px;">
+<a class="index-button" href="https://en.unionpedia.org/All:Aiwa"><img style="height: 28px; vertical-align: bottom; margin: 0; padding: 0;" src="static/images/index.png" alt="Index Aiwa" title="Index Aiwa"/></a>
+</div>
+</div>
+
+<p>, is a consumer electronics company.<a href="Aiwa#-References"><span style="display: none;"> </span><sup>[1]</sup></a></p></div><style>
+#relations-index {
+	margin-bottom: 30px;
+}
+#more-content {
+	display: none;
+}
+.index-action {
+	margin-top: 10px;
+	display: block;
+	background-color: #F9F9F9;
+	border: 1px solid #AAA;
+	padding: 6px 10px;
+	overflow: hidden;
+	-color: #AA4400;
+}
+</style>
+	<p id="relations-index"><span style="font-weight: bold;">32 relations: </span><a href="./i/Aiwa#Arev_Petrosyan">Arev Petrosyan</a>, <a href="./i/Aiwa#Betamax">Betamax</a>, <a href="./i/Aiwa#Binaural_recording">Binaural recording</a>, <a href="./i/Aiwa#Boombox">Boombox</a>, <a href="./i/Aiwa#Core_International">Core International</a>, <a href="./i/Aiwa#Dolby_noise-reduction_system">Dolby noise-reduction system</a>, <a href="./i/Aiwa#FK_Partizan">FK Partizan</a>, <a href="./i/Aiwa#Hal_Prewitt">Hal Prewitt</a>, <a href="./i/Aiwa#Heitaro_Nakajima">Heitaro Nakajima</a>, <a href="./i/Aiwa#High_Com">High Com</a>, <a href="./i/Aiwa#Index_of_Japan-related_articles_(A)">Index of Japan-related articles (A)</a>, <a href="./i/Aiwa#Iowa_(disambiguation)">Iowa (disambiguation)</a>, <a href="./i/Aiwa#Joe_Born">Joe Born</a>, <a href="./i/Aiwa#Kate_O&#039;Sullivan">Kate O&#039;Sullivan</a>, <a href="./i/Aiwa#Kyushu_University">Kyushu University</a>, <a href="./i/Aiwa#List_of_acquisitions_by_Sony_Corporation">List of acquisitions by Sony Corporation</a>, <a href="./i/Aiwa#List_of_companies_of_Japan">List of companies of Japan</a>, <a href="./i/Aiwa#List_of_DVD_manufacturers">List of DVD manufacturers</a>, <a href="./i/Aiwa#List_of_electronics_brands">List of electronics brands</a>, <a href="./i/Aiwa#List_of_Late_Quaternary_prehistoric_bird_species">List of Late Quaternary prehistoric bird species</a>, <a href="./i/Aiwa#List_of_microphone_manufacturers">List of microphone manufacturers</a>, <a href="./i/Aiwa#List_of_television_manufacturers">List of television manufacturers</a>, <a href="./i/Aiwa#Memory_Stick">Memory Stick</a>, <a href="./i/Aiwa#Persepolis_F.C.">Persepolis F.C.</a>, <a href="./i/Aiwa#Reel-to-reel_audio_tape_recording">Reel-to-reel audio tape recording</a>, <a href="./i/Aiwa#Sega_CD">Sega CD</a>, <a href="./i/Aiwa#Sega_Genesis">Sega Genesis</a>, <a href="./i/Aiwa#Towada_Audio">Towada Audio</a>, <a href="./i/Aiwa#Treble_booster">Treble booster</a>, <a href="./i/Aiwa#Vestel">Vestel</a>, <a href="./i/Aiwa#1994_in_video_gaming">1994 in video gaming</a>, <a href="./i/Aiwa#2003&ndash;04_Esteghlal_F.C._season">2003&ndash;04 Esteghlal F.C. season</a>.</p><script>
+		function openReference(id) {
+			if ($('#reference-button-open-'+id).is(":visible"))
+				$('#reference-button-open-'+id).hide();
+			if ($('#reference-button-close-'+id).is(":visible"))
+				$('#reference-button-close-'+id).show();
+			$('#reference-box-'+id).show();
+		}
+		function closeReference(id) {
+			$('#reference-box-'+id).hide();
+			if ($('#reference-button-close-'+id).is(":visible"))
+				$('#reference-button-close-'+id).hide();
+			if ($('#reference-button-open-'+id).is(":visible"))
+				$('#reference-button-open-'+id).show();
+		}
+		function switchReference(id, clicked) {
+			if ($('#reference-box-'+id).is(":visible"))
+				closeReference(id);
+			else openReference(id);
+			$(clicked).blur();
+		}
+	</script>
+
+	<style>
+	.rel-desc { word-wrap: break-word; }
+	.rel-bottom { margin-top: -14px; font-size: 0.8em; font-style: italic; }
+	.rel-new { color: #E70; font-weight: bold; }
+	.rel-bottom a { vertical-align: top; }
+	a.rel-more { overflow: hidden; display: inline-block; }
+		</style>
+	<a id="Arev_Petrosyan"></a><h2><a href="./i/Arev_Petrosyan">Arev Petrosyan</a></h2><p class="rel-desc">Arev Petrosyan (born May 6, 1972 in Yerevan), is an Armenian artist.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Aiwa/vs/Arev_Petrosyan">Aiwa and Arev Petrosyan</a> &middot; <a class="rel-more" href="./i/Arev_Petrosyan">See more &raquo;</a></p><a id="Betamax"></a><h2><a href="./i/Betamax">Betamax</a></h2><p class="rel-desc">Betamax (also called Beta, as in its logo) is a consumer-level analog-recording and cassette format of magnetic tape for video.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Aiwa/vs/Betamax">Aiwa and Betamax</a> &middot; <a class="rel-more" href="./i/Betamax">See more &raquo;</a></p><a id="Binaural_recording"></a><h2><a href="./i/Binaural_recording">Binaural recording</a></h2><p class="rel-desc">Binaural recording is a method of recording sound that uses two microphones, arranged with the intent to create a 3-D stereo sound sensation for the listener of actually being in the room with the performers or instruments.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Aiwa/vs/Binaural_recording">Aiwa and Binaural recording</a> &middot; <a class="rel-more" href="./i/Binaural_recording">See more &raquo;</a></p>                    <ins class="adsbygoogle"
+                         style="display:block; text-align:center;"
+                         data-ad-layout="in-article"
+                         data-ad-format="fluid"
+                         data-ad-client="ca-pub-5555190471190823"
+                         data-ad-slot="4868122376"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    <a id="Boombox"></a><h2><a href="./i/Boombox">Boombox</a></h2><p class="rel-desc">A boombox is a transistorized portable music player featuring one or two cassette tape recorder/players and AM/FM radio, generally with a carrying handle.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Aiwa/vs/Boombox">Aiwa and Boombox</a> &middot; <a class="rel-more" href="./i/Boombox">See more &raquo;</a></p><a id="Core_International"></a><h2><a href="./i/Core_International">Core International</a></h2><p class="rel-desc">Core International, Inc.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Aiwa/vs/Core_International">Aiwa and Core International</a> &middot; <a class="rel-more" href="./i/Core_International">See more &raquo;</a></p><a id="Dolby_noise-reduction_system"></a><h2><a href="./i/Dolby_noise-reduction_system">Dolby noise-reduction system</a></h2><p class="rel-desc">A Dolby noise-reduction system, or Dolby NR, is one of a series of noise reduction systems developed by Dolby Laboratories for use in analog magnetic tape recording.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Aiwa/vs/Dolby_noise-reduction_system">Aiwa and Dolby noise-reduction system</a> &middot; <a class="rel-more" href="./i/Dolby_noise-reduction_system">See more &raquo;</a></p><a id="FK_Partizan"></a><h2><a href="./i/FK_Partizan">FK Partizan</a></h2><p class="rel-desc">Fudbalski klub Partizan (Фудбалски клуб Партизан), commonly known as Partizan Belgrade (Партизан Београд / Partizan Beograd) or simply Partizan, is a Serbian professional football club based in Belgrade.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Aiwa/vs/FK_Partizan">Aiwa and FK Partizan</a> &middot; <a class="rel-more" href="./i/FK_Partizan">See more &raquo;</a></p><a id="Hal_Prewitt"></a><h2><a href="./i/Hal_Prewitt">Hal Prewitt</a></h2><p class="rel-desc">Harold D. Prewitt, Jr (Hal) (born October 1, 1954, in Hutchinson, Kansas) is an artist, photographer, race car driver, businessperson, inventor of personal computer products and early pioneer in the personal computer revolution.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Aiwa/vs/Hal_Prewitt">Aiwa and Hal Prewitt</a> &middot; <a class="rel-more" href="./i/Hal_Prewitt">See more &raquo;</a></p><a id="Heitaro_Nakajima"></a><h2><a href="./i/Heitaro_Nakajima">Heitaro Nakajima</a></h2><p class="rel-desc">was a Japanese digital audio pioneer, who led Sony&#039;s Compact Disc project in the 1970s.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Aiwa/vs/Heitaro_Nakajima">Aiwa and Heitaro Nakajima</a> &middot; <a class="rel-more" href="./i/Heitaro_Nakajima">See more &raquo;</a></p><a id="High_Com"></a><h2><a href="./i/High_Com">High Com</a></h2><p class="rel-desc">The High&amp;thinsp;Com (also as HIGH&amp;thinsp;COM, both written with a thin space) noise reduction system was developed by Telefunken, Germany, in the 1970s as a high quality high compression analogue compander for audio recordings.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Aiwa/vs/High_Com">Aiwa and High Com</a> &middot; <a class="rel-more" href="./i/High_Com">See more &raquo;</a></p><a id="Index_of_Japan-related_articles_(A)"></a><h2><a href="./i/Index_of_Japan-related_articles_(A)">Index of Japan-related articles (A)</a></h2><p class="rel-desc">This page lists Japan-related articles with romanized titles beginning with the letter A. For names of people, please list by surname (i.e., &quot;Tarō Yamada&quot; should be listed under &quot;Y&quot;, not &quot;T&quot;).</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Aiwa/vs/Index_of_Japan-related_articles_(A)">Aiwa and Index of Japan-related articles (A)</a> &middot; <a class="rel-more" href="./i/Index_of_Japan-related_articles_(A)">See more &raquo;</a></p><a id="Iowa_(disambiguation)"></a><h2><a href="./i/Iowa_(disambiguation)">Iowa (disambiguation)</a></h2><p class="rel-desc">Iowa is a state of the United States of America.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Aiwa/vs/Iowa_(disambiguation)">Aiwa and Iowa (disambiguation)</a> &middot; <a class="rel-more" href="./i/Iowa_(disambiguation)">See more &raquo;</a></p><a id="Joe_Born"></a><h2><a href="./i/Joe_Born">Joe Born</a></h2><p class="rel-desc">Joseph Born, better known as Joe Born, is an American businessman.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Aiwa/vs/Joe_Born">Aiwa and Joe Born</a> &middot; <a class="rel-more" href="./i/Joe_Born">See more &raquo;</a></p>                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-format="fluid"
+                         data-ad-layout-key="-ea+6m+1v-na+zc"
+                         data-ad-client="ca-pub-5555190471190823"
+                         data-ad-slot="7793630625"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    <a id="Kate_O&#039;Sullivan"></a><h2><a href="./i/Kate_O&#039;Sullivan">Kate O&#039;Sullivan</a></h2><p class="rel-desc">Kate O&#039;Sullivan is a British actress, singer, voiceover artist and impressionist.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Aiwa/vs/Kate_O&#039;Sullivan">Aiwa and Kate O&#039;Sullivan</a> &middot; <a class="rel-more" href="./i/Kate_O&#039;Sullivan">See more &raquo;</a></p><a id="Kyushu_University"></a><h2><a href="./i/Kyushu_University">Kyushu University</a></h2><p class="rel-desc">, abbreviated to, is a Japanese national university located in Fukuoka, in the island of Kyushu.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Aiwa/vs/Kyushu_University">Aiwa and Kyushu University</a> &middot; <a class="rel-more" href="./i/Kyushu_University">See more &raquo;</a></p><a id="List_of_acquisitions_by_Sony_Corporation"></a><h2><a href="./i/List_of_acquisitions_by_Sony_Corporation">List of acquisitions by Sony Corporation</a></h2><p class="rel-desc">() is a multinational conglomerate corporation headquartered in Minato, Tokyo, Japan, and one of the world&#039;s largest media conglomerates.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Aiwa/vs/List_of_acquisitions_by_Sony_Corporation">Aiwa and List of acquisitions by Sony Corporation</a> &middot; <a class="rel-more" href="./i/List_of_acquisitions_by_Sony_Corporation">See more &raquo;</a></p><a id="List_of_companies_of_Japan"></a><h2><a href="./i/List_of_companies_of_Japan">List of companies of Japan</a></h2><p class="rel-desc">This is a list of notable companies based in Japan.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Aiwa/vs/List_of_companies_of_Japan">Aiwa and List of companies of Japan</a> &middot; <a class="rel-more" href="./i/List_of_companies_of_Japan">See more &raquo;</a></p><a id="List_of_DVD_manufacturers"></a><h2><a href="./i/List_of_DVD_manufacturers">List of DVD manufacturers</a></h2><p class="rel-desc">This aims to be a complete list of DVD manufacturers.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Aiwa/vs/List_of_DVD_manufacturers">Aiwa and List of DVD manufacturers</a> &middot; <a class="rel-more" href="./i/List_of_DVD_manufacturers">See more &raquo;</a></p><a id="List_of_electronics_brands"></a><h2><a href="./i/List_of_electronics_brands">List of electronics brands</a></h2><p class="rel-desc">This list of electronics brands is specialized as the list of brands of companies that provide electronics equipment.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Aiwa/vs/List_of_electronics_brands">Aiwa and List of electronics brands</a> &middot; <a class="rel-more" href="./i/List_of_electronics_brands">See more &raquo;</a></p><a id="List_of_Late_Quaternary_prehistoric_bird_species"></a><h2><a href="./i/List_of_Late_Quaternary_prehistoric_bird_species">List of Late Quaternary prehistoric bird species</a></h2><p class="rel-desc">Prehistoric birds are various taxa of birds that have become extinct before recorded history, or more precisely, before they could be studied alive by ornithologists.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Aiwa/vs/List_of_Late_Quaternary_prehistoric_bird_species">Aiwa and List of Late Quaternary prehistoric bird species</a> &middot; <a class="rel-more" href="./i/List_of_Late_Quaternary_prehistoric_bird_species">See more &raquo;</a></p><a id="List_of_microphone_manufacturers"></a><h2><a href="./i/List_of_microphone_manufacturers">List of microphone manufacturers</a></h2><p class="rel-desc">The following is a list of current microphone manufacturers.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Aiwa/vs/List_of_microphone_manufacturers">Aiwa and List of microphone manufacturers</a> &middot; <a class="rel-more" href="./i/List_of_microphone_manufacturers">See more &raquo;</a></p><a id="List_of_television_manufacturers"></a><h2><a href="./i/List_of_television_manufacturers">List of television manufacturers</a></h2><p class="rel-desc">This is a list of television manufacturers, past and present.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Aiwa/vs/List_of_television_manufacturers">Aiwa and List of television manufacturers</a> &middot; <a class="rel-more" href="./i/List_of_television_manufacturers">See more &raquo;</a></p><a id="Memory_Stick"></a><h2><a href="./i/Memory_Stick">Memory Stick</a></h2><p class="rel-desc">Memory Stick is a removable flash memory card format, originally launched by Sony in late 1998.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Aiwa/vs/Memory_Stick">Aiwa and Memory Stick</a> &middot; <a class="rel-more" href="./i/Memory_Stick">See more &raquo;</a></p><a id="Persepolis_F.C."></a><h2><a href="./i/Persepolis_F.C.">Persepolis F.C.</a></h2><p class="rel-desc">Persepolis Football Club (باشگاه فوتبال پرسپولیس), is a Persian Gulf Pro League professional football club based in Tehran, Iran.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Aiwa/vs/Persepolis_F.C.">Aiwa and Persepolis F.C.</a> &middot; <a class="rel-more" href="./i/Persepolis_F.C.">See more &raquo;</a></p><a id="Reel-to-reel_audio_tape_recording"></a><h2><a href="./i/Reel-to-reel_audio_tape_recording">Reel-to-reel audio tape recording</a></h2><p class="rel-desc">Reel-to/open-reel audio tape recording is the form of magnetic tape audio recording in which the recording medium is held on a reel, rather than being securely contained within a cassette.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Aiwa/vs/Reel-to-reel_audio_tape_recording">Aiwa and Reel-to-reel audio tape recording</a> &middot; <a class="rel-more" href="./i/Reel-to-reel_audio_tape_recording">See more &raquo;</a></p><a id="Sega_CD"></a><h2><a href="./i/Sega_CD">Sega CD</a></h2><p class="rel-desc">The Sega CD, released as the in most regions outside North America and Brazil, is a CD-ROM accessory for the Sega Genesis video game console designed and produced by Sega as part of the fourth generation of video game consoles.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Aiwa/vs/Sega_CD">Aiwa and Sega CD</a> &middot; <a class="rel-more" href="./i/Sega_CD">See more &raquo;</a></p><a id="Sega_Genesis"></a><h2><a href="./i/Sega_Genesis">Sega Genesis</a></h2><p class="rel-desc">The Sega Genesis, known as the in regions outside of North America, is a 16-bit home video game console developed and sold by Sega.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Aiwa/vs/Sega_Genesis">Aiwa and Sega Genesis</a> &middot; <a class="rel-more" href="./i/Sega_Genesis">See more &raquo;</a></p><a id="Towada_Audio"></a><h2><a href="./i/Towada_Audio">Towada Audio</a></h2><p class="rel-desc">Towada Audio Corporation is a Japanese manufacturer of radio, television broadcasting and communications equipment headquartered in Kosaka, Akita.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Aiwa/vs/Towada_Audio">Aiwa and Towada Audio</a> &middot; <a class="rel-more" href="./i/Towada_Audio">See more &raquo;</a></p><a id="Treble_booster"></a><h2><a href="./i/Treble_booster">Treble booster</a></h2><p class="rel-desc">A treble booster is an effects unit used by guitarists to boost volume and especially the high end of their tonal spectrum, and was popular mostly during the 1960s.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Aiwa/vs/Treble_booster">Aiwa and Treble booster</a> &middot; <a class="rel-more" href="./i/Treble_booster">See more &raquo;</a></p><a id="Vestel"></a><h2><a href="./i/Vestel">Vestel</a></h2><p class="rel-desc">Vestel is a Turkish home and professional appliances manufacturing company consisting of 18 companies specialised in electronics, major appliances and information technology.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Aiwa/vs/Vestel">Aiwa and Vestel</a> &middot; <a class="rel-more" href="./i/Vestel">See more &raquo;</a></p><a id="1994_in_video_gaming"></a><h2><a href="./i/1994_in_video_gaming">1994 in video gaming</a></h2><p class="rel-desc">1994 has seen many sequels and prequels in video games and several new titles such as Super Metroid, Donkey Kong Country and Sonic &amp; Knuckles.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/1994_in_video_gaming/vs/Aiwa">Aiwa and 1994 in video gaming</a> &middot; <a class="rel-more" href="./i/1994_in_video_gaming">See more &raquo;</a></p><a id="2003&ndash;04_Esteghlal_F.C._season"></a><h2><a href="./i/2003&ndash;04_Esteghlal_F.C._season">2003&ndash;04 Esteghlal F.C. season</a></h2><p class="rel-desc">The 2003&amp;ndash;04 season are the Esteghlal Football Club&#039;s 3rd season in the Iran Pro League, and their 10th consecutive season in the top division of Iranian football.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/2003&ndash;04_Esteghlal_F.C._season/vs/Aiwa">Aiwa and 2003&ndash;04 Esteghlal F.C. season</a> &middot; <a class="rel-more" href="./i/2003&ndash;04_Esteghlal_F.C._season">See more &raquo;</a></p>
+<a id="-Redirects_here:"></a>
+<h2>Redirects here:</h2>
+<p><a href="AIWA">AIWA</a>.</p>
+
+<a id="-References"></a>
+<h2>References</h2>
+<p>[1] <a href="https://en.wikipedia.org/wiki/Aiwa" target="_blank">https://en.wikipedia.org/wiki/Aiwa</a></p>
+
+<div style="clear: both;"></div>
+<!--
+<div>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+	style="display:block"
+	data-ad-format="autorelaxed"
+	data-ad-client="ca-pub-5555190471190823"
+	data-ad-slot="9764273531"></ins>
+<script>
+	(adsbygoogle = window.adsbygoogle || []).push({params: {google_ad_channel: my_google_ad_channel}});
+</script>
+</div>
+-->
+<div style="text-align: center;">
+<div style="text-align: center; margin-left: auto; margin-right: auto; margin-top: 25px;">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Unionpedia Bottom Bonus -->
+<ins class="adsbygoogle"
+	style="display:block"
+	data-ad-client="ca-pub-5555190471190823"
+	data-ad-slot="3364486335"
+	data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({params: {google_ad_channel: my_google_ad_channel}});
+</script>
+</div>
+</div>
+	</div>
+	<div id="footer">
+				<p>Unionpedia is a concept map or semantic network organized like an encyclopedia – dictionary. It gives a brief definition of each concept and its relationships.</p>
+		<p style="font-size: 0.8em;">This is a giant online mental map that serves as a basis for concept diagrams.
+It's free to use and each article or document can be downloaded.
+It's a tool, resource or reference for study, research, education, learning or teaching, that can be used by teachers, educators, pupils or students;
+for the academic world: for school, primary, secondary, high school, middle, technical degree, college, university, undergraduate, master's or doctoral degrees;
+for papers, reports, projects, ideas, documentation, surveys, summaries, or thesis.
+Here is the definition, explanation, description, or the meaning of each significant on which you need information, and a list of their associated concepts as a glossary. Available in English, Spanish, Portuguese, Japanese, Chinese, French, German, Italian, Polish, Dutch, Russian, Arabic, Hindi, Swedish, Ukrainian, Hungarian, Catalan, Czech, Hebrew, Danish, Finnish, Indonesian, Norwegian, Romanian, Turkish, Vietnamese, Korean, Thai, Greek, Bulgarian, Croatian, Slovak, Lithuanian, Filipino, Latvian, Estonian  and  Slovenian. More languages soon.</p>
+		<p style="font-size: 0.8em;">All the information was extracted from <a target="_blank" href="http://www.wikipedia.org/">Wikipedia</a>, and it's available under the <a target="_blank" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Attribution-ShareAlike License</a>.</p>
+		<p style="font-size: 0.8em;">Unionpedia is not endorsed by or affiliated with the Wikimedia Foundation.</p>
+		<p style="font-size: 0.8em;">Google Play, Android and the Google Play logo are trademarks of Google Inc.</p>
+		<p style="font-size: 0.8em;"><a href="./Privacy:">Privacy Policy</a></p>
+	</div>
+</div>
+<div id="header-bar">
+	<div id="tabs-bar">
+		<a href="./Aiwa" title="Outgoing relations">Outgoing</a><a href="./i/Aiwa" class="open" title="Incoming relations">Incoming</a>	</div>
+			<div style="float: left; margin-top: 20px; margin-left: 9px; height: 10px; vertical-align: top;">
+		<div style="display: inline-block; margin-top: 3px; font-weight: bold; color: #C00; font-size: 0.8em; margin-right: 5px;">Hey! We are on Facebook now! &raquo;</div>
+		<div class="fb-like" data-href="https://www.facebook.com/Unionpedia" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true" style="display: inline-block; vertical-align: top;"></div>
+	</div>
+		<div id="search-bar">
+
+				<div style="display: inline-block; margin-top: 4px; font-size: 0.8em; ">
+			<a href="https://en.unionpedia.org/Join:" style="display: inline-block; margin-right: 5px;">Create account</a>
+			<a href="https://en.unionpedia.org/Login:" style="display: inline-block; margin-right: 5px;">Log in</a>
+		</div>
+		
+		<input type="text" placeholder="Search" value="" id="text-search"/>
+		<input type="button" value="Search" onclick="javascript:goSearch();"/>
+		<script>
+		function goSearch() {
+			window.location.href = domain+'Search:'+$('#text-search').val();
+		}
+		$('#text-search').on('keypress', function(ev) {
+			if (ev.which == 13) goSearch();
+		});
+		</script>
+	</div>
+
+	<div style="clear: both;"></div>
+</div>
+<div id="header">
+	<div style="text-align: center;">
+	<a href="./"><img src="static/images/logo-u.png" alt="Logo" style="width: 70px; margin: auto 0; margin-top: -20px; opacity: 0.8;"/></a>
+	</div>
+	<ul>
+	<li style="margin: 0; padding: 0; text-align: center;"><a href="./">
+		<img src="static/images/unionpedia_home_2019.png" alt="Unionpedia" title="Unionpedia" style="width: 100%; margin-top: 0px; opacity: 0.9;"/>
+	</a></li>
+	<li style="margin: 0; padding: 0; text-align: center;"><a href="./">
+		<img src="static/images/the_concept_map_home.png" alt="The Concept Map" title="The Concept Map" style="width: 100%; margin-top: -8px; opacity: 0.9;"/>
+	</a></li>
+			<li><a href="./Saved:">Saved concepts</a></li>
+		<li><a href="./Random:">Random page</a></li>
+			<li><a href="./Index:">Index</a></li>
+				</ul>
+
+		<h2 style="height: 0; overflow: hidden; margin-bottom: 0; padding: 0;">&nbsp;</h2>
+	<div style="margin-top: 15px;">
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- Unionpedia Left Responsive -->
+		<ins class="adsbygoogle"
+			 style="display:block"
+			 data-ad-client="ca-pub-5555190471190823"
+			 data-ad-slot="3066731530"
+			 data-ad-format="auto"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({params: {google_ad_channel: my_google_ad_channel}});
+		</script>
+			</div>
+	
+			<h2>Languages</h2>
+		<ul class="list">
+				<li><a href="https://de.unionpedia.org/Aiwa" lang="de" title="Aiwa – German">Deutsch</a></li>
+				<li><a href="https://es.unionpedia.org/Aiwa" lang="es" title="Aiwa – Spanish">Español</a></li>
+				<li><a href="https://fr.unionpedia.org/Aiwa" lang="fr" title="Aiwa – French">Français</a></li>
+				<li><a href="https://it.unionpedia.org/Aiwa" lang="it" title="Aiwa – Italian">Italiano</a></li>
+				<li><a href="https://ja.unionpedia.org/アイワ" lang="ja" title="アイワ – Japanese">日本語</a></li>
+				<li><a href="https://ko.unionpedia.org/아이와" lang="ko" title="아이와 – Korean">한국어</a></li>
+				<li><a href="https://nl.unionpedia.org/Aiwa" lang="nl" title="Aiwa – Dutch">Nederlands</a></li>
+				<li><a href="https://pt.unionpedia.org/Aiwa" lang="pt" title="Aiwa – Portuguese">Português</a></li>
+				<li><a href="https://ru.unionpedia.org/Aiwa" lang="ru" title="Aiwa – Russian">Русский</a></li>
+				<li><a href="https://sv.unionpedia.org/Aiwa" lang="sv" title="Aiwa – Swedish">Svenska</a></li>
+				<li><a href="https://tr.unionpedia.org/Aiwa" lang="tr" title="Aiwa – Turkish">Türkçe</a></li>
+				<li><a href="https://uk.unionpedia.org/Aiwa" lang="uk" title="Aiwa – Ukrainian">Українська</a></li>
+				<li><a href="https://zh.unionpedia.org/愛華" lang="zh" title="愛華 – Chinese">中文</a></li>
+				</ul>
+	
+</div>
+
+
+
+<style>
+/* MODAL VIEWS / MODAL WINDOWS */
+.modal {
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+	display: inline-block;
+	background-color: #FFF;
+	margin: 30px auto;
+	margin-top: 100px;
+	-margin-top: 180px;
+	overflow: hidden;
+	position: relative;
+	border-radius: 3px;
+}
+.modal .titlebar {
+	background-color: #E0E0E0;
+	color: #666;
+	padding: 10px 13px;
+}
+.modal .content {
+	padding: 10px;
+}
+.modalBack {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	padding: 15pt;
+	padding-top: 50pt;
+}
+.modalBackShadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.83);
+	opacity: 0.9;
+}
+</style>
+<script>
+function removeModal(modalID, cancelCallback) {
+	$('.modalBack .modal').hide();
+	$('.modalBack').fadeOut(200, function() {
+		$('body').css('overflow', 'scroll');
+		var modal = $('.modalBack .modal').detach();
+		$('#'+modalID).append(modal);
+		$('.modalBack').remove();
+		if (cancelCallback) cancelCallback();
+	});
+}
+function removeModalBuilder(modalID, cancelCallback) {
+	return function() { return removeModal(modalID, cancelCallback); }
+}
+function showModal(modalID, cancelCallback) {
+	$("body").css("overflow", "hidden");
+
+	var back = $('<div class="modalBack" style="z-index: 99999999999998;""></div>');
+	$("body").append(back);
+	back.click(removeModalBuilder(modalID, cancelCallback));
+
+	var backShadow = $('<div class="modalBackShadow"></div>');
+	back.append(backShadow);
+	backShadow.click(removeModalBuilder(modalID, cancelCallback));
+
+	var backTransparent = $('<div class="modalBack" style="z-index: 99999999999999; text-align: center; overflow: auto;"></div>');
+	$("body").append(backTransparent);
+	var modal = $('#'+modalID+' .modal');
+	modal.on('click', function(event) { event.stopPropagation(); });
+	backTransparent.append(modal);
+	backTransparent.click(removeModalBuilder(modalID, cancelCallback));
+	return modal;
+}
+function dontShowFBPopup() {
+	createCookie(window.fbPopupCookie, "closed", 60);
+}
+</script>
+
+<div id="facebookPopupParent" style="display: none;"><div id="facebookPopupFACEBOOK">
+<div class="modal" style="display: block; width: 445px; text-align: left;">
+	<div title="Close" onclick="javascript:removeModal('facebookPopup', dontShowFBPopup);" style="display: inline-block; background: url('static/images/facebook/close.png') no-repeat center center; width: 42px; height: 42px; float: right; cursor: pointer; right: 8px; top: 4px; position: absolute;"></div>
+    <div>
+        <div>
+            <div style="line-height: 40px; padding-bottom: 25px; padding-top: 10px; font-size:28px; background: #3a5897 url(static/images/facebook/bubble-bottom.png) repeat-x 0 100%;">
+                <a style="padding: 12px 0px 10px 22px;" href="https://www.facebook.com/Unionpedia" target="_blank">
+					<img src="static/images/facebook/title.png" alt="facebook">
+				</a>
+                <div style="border-top: 1px solid rgba(255,255,255,0.6); color: #FFF; padding: 22px 0px 22px 22px; font-size: 18px !important; line-height: 1.2em !important; font: 12px/1.2 Helvetica, Arial, sans-serif;">
+					Click <b>"Like"</b><br/>
+					to join Unionpedia.org on Facebook.									</div>
+            </div>
+
+            <div style="padding-bottom:0px; height:90px; margin-top:15px; padding-left:25px;">
+				<div id="facebook-popup" style="z-index:1000;" data-event-listener-id="js-dialog-social-overlay-1" data-event-like="Subscribe" data-ga-skip-trigger="1" data-event-dislike="Unsubscribe"  data-ga-category="FacebookGroupOverlay" data-ga-action="Subscribe" class="fb-like" data-href="https://www.facebook.com/Unionpedia" data-width="400" data-layout="standard" data-action="like" data-show-faces="true" data-share="false"></div>
+            </div>
+        </div>
+        <div style="background-color: #DDD; padding: 16px; padding-bottom: 20px; font: 12px/1.2 Helvetica, Arial, sans-serif; text-align: center;">
+            <a href="#" onclick="javascript:removeModal('facebookPopup', dontShowFBPopup); return false;" style="display: inline-block; font-size:14px; text-decoration:none; border-bottom:1px dashed #000; color: #333;">
+								Great! I'm already part of Unionpedia!
+			</a>
+						<a href="#" onclick="javascript:removeModal('facebookPopup', dontShowFBPopup); return false;" style="display: inline-block; font-size:14px; text-decoration:none; -border-bottom:1px dashed #000; color: #888; margin-left: 50px;">
+				No, thank you!
+			</a>
+			        </div>
+    </div>
+</div>
+</div><div id="facebookPopup"><div class="modal" style="display: block; width: 445px; text-align: left;">
+	<div style="background-color: red;">
+		<div title="Close" onclick="javascript:removeModal('facebookPopup', dontShowFBPopup);" style="display: inline-block; background: url('static/images/instagram/close.png') no-repeat center center; width: 42px; height: 42px; float: right; cursor: pointer; right: 8px; top: 7px; position: absolute;"></div>
+    
+        <div>
+            <div style="-line-height: 28px; padding-bottom: 0px; padding-top: 5px; -font-size:28px; background-color: #FFF;">
+                <a style="display: block; padding: 3px 0px 7px 20px; border-bottom: 1px solid #CCC;" href="https://www.instagram.com/unionpedia/" target="_blank">
+					<img src="static/images/unionpedia_home_2019.png" alt="instagram" style="height: 38px;">
+				</a>
+            </div>
+        </div>
+		
+		<div style="clear: both;"></div>
+		
+	</div>
+	<a style="color: #333; text-decoration: none;" href="https://www.instagram.com/unionpedia/" target="_blank">
+	<div style="padding: 20px; background-color: #DDEEFF; text-align: center;">
+		<div style="color: #222; color: #05E; font-size: 18px !important; line-height: 1.2em !important; font: 12px/1.2 Helvetica, Arial, sans-serif;">
+			Select the topic you are interested in:		</div>
+	</div>
+	</a>
+	<div style="padding: 8px 20px; margin-bottom: 10px; -text-align: center;">
+	
+						<div style="text-align: center; margin: 15px 0;">
+					<a class="follow_ig_button" style="display: inline-block; background-color: #0095f6; color: #FFF; border-radius: 3px; text-decoration: none; padding: 12px 20px; font-size: 17px;" href="Arev_Petrosyan">
+						Arev Petrosyan					</a>
+				</div>
+							<div style="text-align: center; margin: 15px 0;">
+					<a class="follow_ig_button" style="display: inline-block; background-color: #0095f6; color: #FFF; border-radius: 3px; text-decoration: none; padding: 12px 20px; font-size: 17px;" href="List_of_Late_Quaternary_prehistoric_bird_species">
+						List of Late Quaternary prehistoric bird species					</a>
+				</div>
+							<div style="text-align: center; margin: 15px 0;">
+					<a class="follow_ig_button" style="display: inline-block; background-color: #0095f6; color: #FFF; border-radius: 3px; text-decoration: none; padding: 12px 20px; font-size: 17px;" href="Betamax">
+						Betamax					</a>
+				</div>
+							<div style="text-align: center; margin: 15px 0;">
+					<a class="follow_ig_button" style="display: inline-block; background-color: #0095f6; color: #FFF; border-radius: 3px; text-decoration: none; padding: 12px 20px; font-size: 17px;" href="List_of_companies_of_Japan">
+						List of companies of Japan					</a>
+				</div>
+							<div style="text-align: center; margin: 15px 0;">
+					<a class="follow_ig_button" style="display: inline-block; background-color: #0095f6; color: #FFF; border-radius: 3px; text-decoration: none; padding: 12px 20px; font-size: 17px;" href="List_of_electronics_brands">
+						List of electronics brands					</a>
+				</div>
+			
+	</div>
+	<div>
+	
+        <div style="background-color: #DDD; padding: 16px; padding-bottom: 20px; font: 12px/1.2 Helvetica, Arial, sans-serif; text-align: center;">
+            						<a href="#" onclick="javascript:removeModal('facebookPopup', dontShowFBPopup); return false;" style="display: inline-block; font-size:14px; text-decoration:none; -border-bottom:1px dashed #000; color: #888;">
+				No, thanks!
+			</a>
+			        </div>
+    </div>
+</div>
+</div></div>
+<script>
+function createCookie(name,value,days) {
+	var expires = "";
+	if (days) {
+		var date = new Date();
+		date.setTime(date.getTime()+(days*24*60*60*1000));
+		expires = "; expires="+date.toGMTString();
+	}
+	document.cookie = name+"="+value+expires+"; path=/";
+}
+function readCookie(name) {
+	var nameEQ = name + "=", ca = document.cookie.split(';');
+	for(var i=0;i < ca.length;i++) {
+		var c = ca[i];
+		while (c.charAt(0)==' ') c = c.substring(1,c.length);
+		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+	}
+	return null;
+}
+function eraseCookie(name) {
+	createCookie(name,"",-1);
+}
+function preloadImages() {
+	var images = new Array();
+	for (i = 0; i < preloadImages.arguments.length; i++) {
+		images[i] = new Image();
+		images[i].src = preloadImages.arguments[i];
+	}
+}
+preloadImages(
+	"static/images/facebook/title.png",
+	"static/images/facebook/close.png",
+	"static/images/facebook/bubble-bottom.png",
+	"static/images/instagram/title.png",
+	"static/images/instagram/close.png",
+	"static/images/instagram/unionpedia.jpg"
+);
+function showFBPopup() {
+			setTimeout(function() {
+		showModal("facebookPopup", dontShowFBPopup);
+	}, parseInt((40+Math.random()*30)*1000.0));
+}
+var fbDivModified = false;
+var documentReady = false;
+$(document).ready(function() {
+	window.documentReady = true;
+		showFBPopup();
+});
+var fbPopupCookie = "facebookPopup";
+//eraseCookie(fbPopupCookie);
+if (!readCookie(fbPopupCookie)) {
+	$("#facebook-popup").bind("DOMSubtreeModified", function() {
+		if (!fbDivModified) {
+			fbDivModified = true;
+					}
+	});
+}
+</script>
+<script>
+// Smooth scrolling
+var $root = $('html, body');
+$('a[href*=#]').click(function(){
+	var href = $.attr(this, 'href')
+	var hash = href.substr(href.indexOf("#")+1);
+    $root.animate({
+        scrollTop: $('[id="' + hash + '"]').offset().top - 7    }, 500, function () {
+        window.location.hash = hash;
+    });
+    return false;
+});
+</script>
+
+<a href="#" id="scrollToTop"></a>
+<style>
+#scrollToTop{
+	position: fixed;
+
+		width: 55px;
+	height: 55px;
+	bottom: 10px;
+	right: 10px;
+	
+	display: none;
+	border-radius: 50%;
+	box-shadow: 1px 1px 7px rgba(0,50,150,0.3);
+
+	background-color: rgba(0,120,205,1);
+	text-decoration: none;
+
+	background-image: url(static/images/arrow-top.png);
+	background-size: 40%;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	opacity: 0.7;
+}
+#scrollToTop:hover{
+	text-decoration:none;
+}
+</style>
+
+<script>
+$(document).ready(function(){
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 265) {
+			$('#scrollToTop').fadeIn(400);
+		} else {
+			$('#scrollToTop').fadeOut(400);
+		}
+	});
+	$('#scrollToTop').click(function(){
+		$('html, body').animate({scrollTop : 0},400);
+		return false;
+	});
+});
+</script>
+
+</body>
+<script src="ads.js/ads.js" type="text/javascript"></script>
+<script type="text/javascript">
+if (document.getElementById('rbiJmWFW8hYmnGheS')){
+	rbiJmWFW8hYmnGheS = 'No';
+} else {
+	rbiJmWFW8hYmnGheS = 'Yes';
+}
+
+if (typeof ga !=='undefined'){
+	ga('send','event','Blocking Ads',rbiJmWFW8hYmnGheS,{'nonInteraction':1});
+	} else if(typeof _gaq !=='undefined'){
+	_gaq.push(['_trackEvent','Blocking Ads',rbiJmWFW8hYmnGheS,undefined,undefined,true]);
+	}
+</script>
+</html>

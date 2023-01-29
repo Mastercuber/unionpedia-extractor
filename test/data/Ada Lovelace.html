@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<base href="https://en.unionpedia.org/"/>
+<meta charset="UTF-8" />
+<meta name="google-site-verification" content="kilq9ljhh3HKXbm9RyT_sL6IOaJrYNIOVmL8-mctv7M" />
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Ada Lovelace, the Glossary">
+<meta name="twitter:description" content="Augusta Ada King-Noel, Countess of Lovelace (n&eacute;e Byron; 10 December 1815 &ndash; 27 November 1852) was an English mathematician and writer, chiefly known for her work on Charles Babbage&#039;s proposed mechanical general-purpose computer, the Analytical Engine. 154 relations.">
+<meta name="twitter:image" content="https://en.unionpedia.org/static/images/unionpedia_fb_thumb.png">
+<title>Ada Lovelace - Unionpedia, the concept map</title>
+<meta name="description" content="Augusta Ada King-Noel, Countess of Lovelace (n&eacute;e Byron; 10 December 1815 &ndash; 27 November 1852) was an English mathematician and writer, chiefly known for her work on Charles Babbage&#039;s proposed mechanical general-purpose computer, the Analytical Engine. 154 relations."/>
+<meta property="og:title" content="Ada Lovelace, the Glossary"/>
+<meta property="og:description" content="Augusta Ada King-Noel, Countess of Lovelace (n&eacute;e Byron; 10 December 1815 &ndash; 27 November 1852) was an English mathematician and writer, chiefly known for her work on Charles Babbage&#039;s proposed mechanical general-purpose computer, the Analytical Engine. 154 relations."/>
+<meta property="og:image" content="https://en.unionpedia.org/static/images/unionpedia_fb_thumb.png"/>
+<meta name="google-signin-client_id" content="306351555599-gi55oqatstpohugn549l05i4n1lq0t0i.apps.googleusercontent.com">
+<link rel="shortcut icon" href="static/images/unionpedia.ico" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+
+<link rel="stylesheet" type="text/css" href="static/css/style-v2.css"/>
+<link rel="stylesheet" type="text/css" href="static/css/login.css"/>
+<script>var domain = 'https://en.unionpedia.org/';</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35016837-5', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script>
+function onSuccess(googleUser) {
+	var profile = googleUser.getBasicProfile();
+	console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+	console.log('Name: ' + profile.getName());
+	console.log('Image URL: ' + profile.getImageUrl());
+	console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+	var id_token = googleUser.getAuthResponse().id_token;
+	console.log('id_token: ' + id_token);
+
+
+	var xhr = new XMLHttpRequest();
+	xhr.open('POST', 'https://en.unionpedia.org/Login:');
+	xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+	xhr.onload = function() {
+		console.log('Signed in as: ' + xhr.responseText);
+	};
+	xhr.send('idtoken=' + id_token);
+
+
+}
+function onFailure(error) {
+	console.log(error);
+}
+function renderButton() {
+	gapi.signin2.render('my-signin2', {
+		'scope': 'profile email',
+		'width': 240,
+		'height': 50,
+		'longtitle': true,
+		'theme': 'dark',
+		'onsuccess': onSuccess,
+		'onfailure': onFailure
+	});
+}
+function signOut() {
+	document.getElementById('formLogout').submit();
+	return;
+	var auth2 = gapi.auth2.getAuthInstance();
+	auth2.signOut().then(function () {
+		console.log('User signed out.');
+		document.getElementById('formLogout').submit();
+	});
+}
+</script>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    bp.src = '//push.zhanzhang.baidu.com/push.js';
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<script>my_google_ad_channel = '8625877597'; // Default</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    params: { google_ad_channel: my_google_ad_channel },
+    google_ad_client: "ca-pub-5555190471190823",
+    enable_page_level_ads: true
+  });
+</script>
+</head>
+<body class="lang-ltr">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=222655474428803";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="comm" style="height: 100px; box-sizing: border-box; border-bottom: 1px solid #BBB; background-color: #FFF;">
+    <div style="display: inline-block; height: 74px; -background-color: red; box-sizing: border-box; margin: 11px 10px; margin-right: 5px; padding: 10px; padding-right: 0; cursor: default; vertical-align: top;">
+        <a href="./" style="text-decoration: none; color: #000;">
+        <img src="static/images/logo-u.png" alt="Logo" style="height: 100%; margin-right: 5px;"/>
+        <div style="display: inline-block; height: 100%; -border: 1px solid green; vertical-align: top;">
+            <img src="static/images/unionpedia_home_2019.png" alt="Unionpedia" style="height: 50%; -border: 1px solid red; padding: 0; margin: 0; margin-top: 1px;"/><br/>
+            <div style="height: 50%; display: inline-block; -border-color: blue; margin: 0; padding: 0; font-style: italic; font-size: 1.05em;">
+            <!--<img src="static/images/the_concept_map_home.png" alt="The Concept Map" title="The Concept Map" style="height: 50%;"/>-->
+            Communication            </div>
+        </div>
+        </a>
+    </div>
+
+	
+	<div style="display: inline-block; height: 100%; -background-color: red; box-sizing: border-box; padding: 2px; padding-right: 0; cursor: default;">
+		<a target="_blank" href="https://play.google.com/store/apps/details?id=org.unionpedia&utm_source=unionpedia.org&utm_campaign=desktop&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img
+			style="height: 80px; margin: 5px 0;" alt="Get it on Google Play"
+			src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
+		/></a>
+	</div>
+
+	<div style="display: inline-block; height: 100%; -background-color: red; box-sizing: border-box; padding: 2px; padding-right: 0; cursor: default; vertical-align: top;">
+		<div style="display: table; height: 100%;">
+			<div style="display: table-cell; vertical-align: middle; height: 100%; -background-color: blue; font-size: 1.1em; -color: #05A; color: #222;">
+								<style>
+					#comm-download {
+						display: inline-block;
+						background-color: #07D;
+						color: #FFF;
+						padding: 9px 13px;
+						border-radius: 3px;
+						margin-right: 10px;
+						margin-left: 10px;
+						box-shadow: 1px 1px 2px rgba(0,100,150,0.3);
+						float: right;
+						margin-top: 2px;
+												background-color: #689f38;
+						box-shadow: 1px 1px 2px rgba(102, 142, 54, 0.4);/*#668e36;*/
+												min-width: 50px;
+						text-align: center;
+					}
+					#comm-download:hover {
+						background-color: #08E;
+						text-decoration: none;
+												background-color: #8bc34a;
+											}
+					img.tick {
+						height: 16px;
+						width: 16px;
+						vertical-align: top;
+						margin-right: 4px;
+						margin-left: 5px;
+					}
+				</style>
+
+				<div style="font-weight: bold; margin-bottom: 7px; margin-top: -3px;"><span style="color: #F00; display: none;">New! </span>Download Unionpedia on your Android™ device!</div>
+
+				<a target="_blank" id="comm-download" href="https://play.google.com/store/apps/details?id=org.unionpedia&utm_source=unionpedia.org&utm_campaign=desktop&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">Free</a>
+
+				<div style="font-size: 0.97em; margin-bottom: 4px; overflow: hidden;"><img class="tick" alt="" src="static/images/tick.png"/>Faster access than browser!</div>
+				<div style="font-size: 0.97em; overflow: hidden;">&nbsp;<!--<img class="tick" src="static/images/tick.png"/>And Ads-free!--></div>
+				
+			</div>
+		</div>
+    </div>
+
+	</div>
+
+
+	
+
+	
+	
+
+<div id="main">
+	<div id="content">
+		<!--337-->
+<div style="display: inline-block; margin: 0 -5px; margin-top: -5px;">
+<div style="margin: -5px; margin-top: 20px; margin-bottom: 0; -margin-bottom: -5px; -margin-left: -10px;">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Unionpedia Bottom -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-5555190471190823"
+     data-ad-slot="6041511130"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({params: {google_ad_channel: my_google_ad_channel}});
+</script>
+</div>
+</div>
+<div style="margin-top: 15px; min-width: 300px; min-height: 600px; float: right; margin-left: 10px; margin-right: -10px; margin-bottom: 20px;">
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!-- Unionpedia Right / Unionpedia Right 2 -->
+	<ins class="adsbygoogle"
+		style="display:inline-block;width:300px;height:600px"
+		data-ad-client="ca-pub-5555190471190823"
+		data-ad-slot="1390440002"></ins>
+	<script>
+	(adsbygoogle = window.adsbygoogle || []).push({params: {google_ad_channel: my_google_ad_channel}});
+	</script>
+	</div>
+<style>
+.page-title h1 {
+	display: inline-block;
+	vertical-align: middle;
+	border: 0;
+	padding-bottom: 0;
+	margin-bottom: 5px;
+	margin-top: 7px;
+	margin-right: 10px;
+}
+.page-title h2 {
+	display: inline-block;
+	vertical-align: middle;
+	border: 0;
+	padding-bottom: 0;
+	margin-bottom: 5px;
+	margin-top: 7px;
+	margin-right: 10px;
+}
+.page-title .save-button, .page-title .unsave-button {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 7px 15px;
+	margin-top: 5px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.page-title .save-button {
+	background-color: #FEA;
+	border: 1px solid rgba(0,0,0,0.05);
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.03);
+	color: #333;
+}
+.page-title .save-button:hover {
+	background-color: #FFF5AA;
+	border: 1px solid rgba(0,0,0,0.1);
+}
+.page-title .unsave-button {
+	background-color: #D5EACA;
+	border: 1px solid rgba(0,0,0,0.05);
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.03);
+	color: #888;
+}
+.page-title .unsave-button:hover {
+	background-color: #D0E0A0;
+	border: 1px solid rgba(0,0,0,0.1);
+}
+.page-title .button-small {
+	padding: 4px 8px;
+	-margin-top: 5px;
+	border-radius: 2px;
+	font-size: 12px;
+	margin: 0;
+}
+.page-title .save-button.button-small {
+	color: rgba(0,0,0,0.7);
+}
+.page-title .unsave-button.button-small {
+	color: rgba(0,0,0,0.5);
+}
+
+
+</style>
+<div  style="overflow: hidden;">
+<div class="page-title" style="display: block; border-bottom: 1px solid #BBB; padding-bottom: 5px; margin-bottom: 15px;">
+<h1 style="overflow: hidden; margin-right: 5px; vertical-align: bottom;">Ada Lovelace</h1>
+<style>
+.index-button { border: 0; padding: 0; margin: 0; }
+.index-button:hover { opacity: 0.7; }
+</style>
+<div style="display: inline-block; vertical-align: bottom; padding-bottom: 6px;">
+<a class="index-button" href="https://en.unionpedia.org/All:Ada Lovelace"><img style="height: 28px; vertical-align: bottom; margin: 0; padding: 0;" src="static/images/index.png" alt="Index Ada Lovelace" title="Index Ada Lovelace"/></a>
+</div>
+</div>
+
+<p>Augusta Ada King-Noel, Countess of Lovelace (n&eacute;e Byron; 10 December 1815 &ndash; 27 November 1852) was an English mathematician and writer, chiefly known for her work on Charles Babbage&#039;s proposed mechanical general-purpose computer, the Analytical Engine.<a href="Ada_Lovelace#-References"><span style="display: none;"> </span><sup>[1]</sup></a></p></div><style>
+#relations-index {
+	margin-bottom: 30px;
+}
+#more-content {
+	display: none;
+}
+.index-action {
+	margin-top: 10px;
+	display: block;
+	background-color: #F9F9F9;
+	border: 1px solid #AAA;
+	padding: 6px 10px;
+	overflow: hidden;
+	-color: #AA4400;
+}
+</style>
+	<p id="relations-index"><span style="font-weight: bold;">154 relations: </span><a href="./Ada_Lovelace#Acronym">Acronym</a>, <a href="./Ada_Lovelace#Ada_(programming_language)">Ada (programming language)</a>, <a href="./Ada_Lovelace#Ada_Initiative">Ada Initiative</a>, <a href="./Ada_Lovelace#Ada,_the_National_College_for_Digital_Skills">Ada, the National College for Digital Skills</a>, <a href="./Ada_Lovelace#Agnes_Scott_College">Agnes Scott College</a>, <a href="./Ada_Lovelace#Alan_Turing">Alan Turing</a>, <a href="./Ada_Lovelace#Algorithm">Algorithm</a>, <a href="./Ada_Lovelace#Allan_G._Bromley">Allan G. Bromley</a>, <a href="./Ada_Lovelace#Allegra_Byron">Allegra Byron</a>, <a href="./Ada_Lovelace#Analytical_Engine">Analytical Engine</a>, <a href="./Ada_Lovelace#Andrew_Crosse">Andrew Crosse</a>, <a href="./Ada_Lovelace#Animal_magnetism">Animal magnetism</a>, <a href="./Ada_Lovelace#Anne_Blunt,_15th_Baroness_Wentworth">Anne Blunt, 15th Baroness Wentworth</a>, <a href="./Ada_Lovelace#Anniversary">Anniversary</a>, <a href="./Ada_Lovelace#Arcadia_(play)">Arcadia (play)</a>, <a href="./Ada_Lovelace#Artificial_intelligence">Artificial intelligence</a>, <a href="./Ada_Lovelace#Augusta_Leigh">Augusta Leigh</a>, <a href="./Ada_Lovelace#Augustus_De_Morgan">Augustus De Morgan</a>, <a href="./Ada_Lovelace#&Ntilde;uSat">&Ntilde;uSat</a>, <a href="./Ada_Lovelace#Baron_Lovelace">Baron Lovelace</a>, <a href="./Ada_Lovelace#Baron_Wentworth">Baron Wentworth</a>, <a href="./Ada_Lovelace#BBC_Radio_4">BBC Radio 4</a>, <a href="./Ada_Lovelace#BCSWomen">BCSWomen</a>, <a href="./Ada_Lovelace#Benjamin_Woolley">Benjamin Woolley</a>, <a href="./Ada_Lovelace#Bernoulli_number">Bernoulli number</a>, <a href="./Ada_Lovelace#Biblioth&egrave;que_universelle_de_Gen&egrave;ve">Biblioth&egrave;que universelle de Gen&egrave;ve</a>, <a href="./Ada_Lovelace#Bloodletting">Bloodletting</a>, <a href="./Ada_Lovelace#Bodleian_Libraries">Bodleian Libraries</a>, <a href="./Ada_Lovelace#Bodleian_Library">Bodleian Library</a>, <a href="./Ada_Lovelace#British_Computer_Society">British Computer Society</a>, <a href="./Ada_Lovelace#Bruce_Sterling">Bruce Sterling</a>, <a href="./Ada_Lovelace#Byron_King-Noel,_Viscount_Ockham">Byron King-Noel, Viscount Ockham</a>, <a href="./Ada_Lovelace#Carl_Reichenbach">Carl Reichenbach</a>, <a href="./Ada_Lovelace#Chaos_theory">Chaos theory</a>, <a href="./Ada_Lovelace#Charles_Babbage">Charles Babbage</a>, <a href="./Ada_Lovelace#Charles_Barry">Charles Barry</a>, <a href="./Ada_Lovelace#Charles_Dickens">Charles Dickens</a>, <a href="./Ada_Lovelace#Charles_Wheatstone">Charles Wheatstone</a>, <a href="./Ada_Lovelace#Childe_Byron">Childe Byron</a>, <a href="./Ada_Lovelace#Church_of_St_Mary_Magdalene,_Hucknall">Church of St Mary Magdalene, Hucknall</a>, <a href="./Ada_Lovelace#Claire_Clairmont">Claire Clairmont</a>, <a href="./Ada_Lovelace#Code:_Debugging_the_Gender_Gap">Code: Debugging the Gender Gap</a>, <a href="./Ada_Lovelace#Computability">Computability</a>, <a href="./Ada_Lovelace#Computer">Computer</a>, <a href="./Ada_Lovelace#Computing">Computing</a>, <a href="./Ada_Lovelace#Computing_Machinery_and_Intelligence">Computing Machinery and Intelligence</a>, <a href="./Ada_Lovelace#Conceiving_Ada">Conceiving Ada</a>, <a href="./Ada_Lovelace#Crossrail">Crossrail</a>, <a href="./Ada_Lovelace#David_Brewster">David Brewster</a>, <a href="./Ada_Lovelace#Debutante">Debutante</a><span id="dots-content">, <a href="javascript:indexMore();">...</a></span><span id="more-content">, <a href="./Ada_Lovelace#Difference_engine">Difference engine</a>, <a href="./Ada_Lovelace#Differential_calculus">Differential calculus</a>, <a href="./Ada_Lovelace#Doron_Swade">Doron Swade</a>, <a href="./Ada_Lovelace#Earl_of_Lovelace">Earl of Lovelace</a>, <a href="./Ada_Lovelace#Earth_observation">Earth observation</a>, <a href="./Ada_Lovelace#East_Horsley">East Horsley</a>, <a href="./Ada_Lovelace#Elizabeth_Medora_Leigh">Elizabeth Medora Leigh</a>, <a href="./Ada_Lovelace#Emerald_Fennell">Emerald Fennell</a>, <a href="./Ada_Lovelace#Free-culture_movement">Free-culture movement</a>, <a href="./Ada_Lovelace#French_language">French language</a>, <a href="./Ada_Lovelace#George_Gordon_of_Gight">George Gordon of Gight</a>, <a href="./Ada_Lovelace#Gight">Gight</a>, <a href="./Ada_Lovelace#Given_name">Given name</a>, <a href="./Ada_Lovelace#Google_Doodle">Google Doodle</a>, <a href="./Ada_Lovelace#Gothic_Revival_architecture">Gothic Revival architecture</a>, <a href="./Ada_Lovelace#Great_Lives">Great Lives</a>, <a href="./Ada_Lovelace#Greek_War_of_Independence">Greek War of Independence</a>, <a href="./Ada_Lovelace#Harvard_University">Harvard University</a>, <a href="./Ada_Lovelace#History_of_computing">History of computing</a>, <a href="./Ada_Lovelace#History_of_computing_hardware">History of computing hardware</a>, <a href="./Ada_Lovelace#Insanity">Insanity</a>, <a href="./Ada_Lovelace#International_Women&#039;s_Day">International Women&#039;s Day</a>, <a href="./Ada_Lovelace#Israel_Institute_for_Advanced_Studies">Israel Institute for Advanced Studies</a>, <a href="./Ada_Lovelace#John_Byron">John Byron</a>, <a href="./Ada_Lovelace#John_Byron_(British_Army_officer)">John Byron (British Army officer)</a>, <a href="./Ada_Lovelace#John_Crowley">John Crowley</a>, <a href="./Ada_Lovelace#John_Graham-Cumming">John Graham-Cumming</a>, <a href="./Ada_Lovelace#John_Hobhouse,_1st_Baron_Broughton">John Hobhouse, 1st Baron Broughton</a>, <a href="./Ada_Lovelace#Jordan_Stratford">Jordan Stratford</a>, <a href="./Ada_Lovelace#Kirkby_Mallory">Kirkby Mallory</a>, <a href="./Ada_Lovelace#Kirkby-in-Ashfield">Kirkby-in-Ashfield</a>, <a href="./Ada_Lovelace#Lady_Byron">Lady Byron</a>, <a href="./Ada_Lovelace#Lauren_Gunderson">Lauren Gunderson</a>, <a href="./Ada_Lovelace#List_of_pioneers_in_computer_science">List of pioneers in computer science</a>, <a href="./Ada_Lovelace#Lord_Byron">Lord Byron</a>, <a href="./Ada_Lovelace#Los_Angeles_Times">Los Angeles Times</a>, <a href="./Ada_Lovelace#Lovelace_Medal">Lovelace Medal</a>, <a href="./Ada_Lovelace#Luigi_Federico_Menabrea">Luigi Federico Menabrea</a>, <a href="./Ada_Lovelace#Mary_Shelley">Mary Shelley</a>, <a href="./Ada_Lovelace#Mary_Somerville">Mary Somerville</a>, <a href="./Ada_Lovelace#Marylebone">Marylebone</a>, <a href="./Ada_Lovelace#Massachusetts">Massachusetts</a>, <a href="./Ada_Lovelace#Masterpiece_(TV_series)">Masterpiece (TV series)</a>, <a href="./Ada_Lovelace#Mathematician">Mathematician</a>, <a href="./Ada_Lovelace#Mathematics">Mathematics</a>, <a href="./Ada_Lovelace#Measles">Measles</a>, <a href="./Ada_Lovelace#Metaphysics">Metaphysics</a>, <a href="./Ada_Lovelace#Michael_Faraday">Michael Faraday</a>, <a href="./Ada_Lovelace#Milbanke_baronets">Milbanke baronets</a>, <a href="./Ada_Lovelace#New_Scientist">New Scientist</a>, <a href="./Ada_Lovelace#Ockham_Park">Ockham Park</a>, <a href="./Ada_Lovelace#Open-source_model">Open-source model</a>, <a href="./Ada_Lovelace#Oxford">Oxford</a>, <a href="./Ada_Lovelace#Pattern">Pattern</a>, <a href="./Ada_Lovelace#Phrenology">Phrenology</a>, <a href="./Ada_Lovelace#Porlock">Porlock</a>, <a href="./Ada_Lovelace#Porlock_Weir">Porlock Weir</a>, <a href="./Ada_Lovelace#Prime_Minister_of_Italy">Prime Minister of Italy</a>, <a href="./Ada_Lovelace#Programmer">Programmer</a>, <a href="./Ada_Lovelace#Punched_card">Punched card</a>, <a href="./Ada_Lovelace#Ralph_King-Milbanke,_2nd_Earl_of_Lovelace">Ralph King-Milbanke, 2nd Earl of Lovelace</a>, <a href="./Ada_Lovelace#Richard_Taylor_(editor)">Richard Taylor (editor)</a>, <a href="./Ada_Lovelace#Romulus_Linney_(playwright)">Romulus Linney (playwright)</a>, <a href="./Ada_Lovelace#Ross-shire">Ross-shire</a>, <a href="./Ada_Lovelace#Satellogic">Satellogic</a>, <a href="./Ada_Lovelace#Science_Museum,_London">Science Museum, London</a>, <a href="./Ada_Lovelace#ScienceDirect">ScienceDirect</a>, <a href="./Ada_Lovelace#Scientific_Memoirs">Scientific Memoirs</a>, <a href="./Ada_Lovelace#Second_law_of_thermodynamics">Second law of thermodynamics</a>, <a href="./Ada_Lovelace#Sir_Clobery_Noel,_5th_Baronet">Sir Clobery Noel, 5th Baronet</a>, <a href="./Ada_Lovelace#Small_satellite">Small satellite</a>, <a href="./Ada_Lovelace#Steampunk">Steampunk</a>, <a href="./Ada_Lovelace#Stephen_Wolfram">Stephen Wolfram</a>, <a href="./Ada_Lovelace#Switzerland">Switzerland</a>, <a href="./Ada_Lovelace#Sydney_Padua">Sydney Padua</a>, <a href="./Ada_Lovelace#The_Difference_Engine">The Difference Engine</a>, <a href="./Ada_Lovelace#The_Guardian">The Guardian</a>, <a href="./Ada_Lovelace#The_Information:_A_History,_a_Theory,_a_Flood">The Information: A History, a Theory, a Flood</a>, <a href="./Ada_Lovelace#The_New_York_Times">The New York Times</a>, <a href="./Ada_Lovelace#The_Right_Honourable">The Right Honourable</a>, <a href="./Ada_Lovelace#The_Thrilling_Adventures_of_Lovelace_and_Babbage">The Thrilling Adventures of Lovelace and Babbage</a>, <a href="./Ada_Lovelace#Tom_Stoppard">Tom Stoppard</a>, <a href="./Ada_Lovelace#Torridon">Torridon</a>, <a href="./Ada_Lovelace#Tottenham_Hale">Tottenham Hale</a>, <a href="./Ada_Lovelace#Tunnel_boring_machine">Tunnel boring machine</a>, <a href="./Ada_Lovelace#United_States_Department_of_Defense">United States Department of Defense</a>, <a href="./Ada_Lovelace#United_States_Military_Standard">United States Military Standard</a>, <a href="./Ada_Lovelace#University_of_Oxford">University of Oxford</a>, <a href="./Ada_Lovelace#University_of_Turin">University of Turin</a>, <a href="./Ada_Lovelace#University_of_Zaragoza">University of Zaragoza</a>, <a href="./Ada_Lovelace#Uterine_cancer">Uterine cancer</a>, <a href="./Ada_Lovelace#Victoria_(UK_TV_series)">Victoria (UK TV series)</a>, <a href="./Ada_Lovelace#Walter_Isaacson">Walter Isaacson</a>, <a href="./Ada_Lovelace#Weston_Library">Weston Library</a>, <a href="./Ada_Lovelace#William_Benjamin_Carpenter">William Benjamin Carpenter</a>, <a href="./Ada_Lovelace#William_Berkeley,_4th_Baron_Berkeley_of_Stratton">William Berkeley, 4th Baron Berkeley of Stratton</a>, <a href="./Ada_Lovelace#William_Byron,_4th_Baron_Byron">William Byron, 4th Baron Byron</a>, <a href="./Ada_Lovelace#William_Frend_(reformer)">William Frend (reformer)</a>, <a href="./Ada_Lovelace#William_Gibson">William Gibson</a>, <a href="./Ada_Lovelace#William_King_(physician)">William King (physician)</a>, <a href="./Ada_Lovelace#William_King-Noel,_1st_Earl_of_Lovelace">William King-Noel, 1st Earl of Lovelace</a>, <a href="./Ada_Lovelace#Women_in_computing">Women in computing</a>, <a href="./Ada_Lovelace#Women_in_STEM_fields">Women in STEM fields</a>, <a href="./Ada_Lovelace#Women&#039;s_Studies_International_Forum">Women&#039;s Studies International Forum</a>.</span>			<script>
+			function indexMore() {$('#dots-content').hide();$('#more-content').show();$('#show-all').hide();$('#show-less').css('display','block');}
+			function indexLess() {
+				$('#dots-content').show();$('#more-content').hide();$('#show-all').show();$('#show-less').css('display','none');
+				$root.animate({
+					scrollTop: 0
+				}, 500, function () {
+					window.location.hash = "";
+				});
+			}
+			</script>
+			<a class="index-action" href="javascript:indexMore();" id="show-all">Expand index (104 more) &raquo;</a>
+			<a class="index-action" href="javascript:indexLess();" id="show-less" style="display: none;">&laquo; Shrink index</a>
+			</p><script>
+		function openReference(id) {
+			if ($('#reference-button-open-'+id).is(":visible"))
+				$('#reference-button-open-'+id).hide();
+			if ($('#reference-button-close-'+id).is(":visible"))
+				$('#reference-button-close-'+id).show();
+			$('#reference-box-'+id).show();
+		}
+		function closeReference(id) {
+			$('#reference-box-'+id).hide();
+			if ($('#reference-button-close-'+id).is(":visible"))
+				$('#reference-button-close-'+id).hide();
+			if ($('#reference-button-open-'+id).is(":visible"))
+				$('#reference-button-open-'+id).show();
+		}
+		function switchReference(id, clicked) {
+			if ($('#reference-box-'+id).is(":visible"))
+				closeReference(id);
+			else openReference(id);
+			$(clicked).blur();
+		}
+	</script>
+
+	<style>
+	.rel-desc { word-wrap: break-word; }
+	.rel-bottom { margin-top: -14px; font-size: 0.8em; font-style: italic; }
+	.rel-new { color: #E70; font-weight: bold; }
+	.rel-bottom a { vertical-align: top; }
+	a.rel-more { overflow: hidden; display: inline-block; }
+		</style>
+	<a id="Acronym"></a><h2><a href="./Acronym">Acronym</a></h2><p class="rel-desc">An acronym is a word or name formed as an abbreviation from the initial components in a phrase or a word, usually individual letters (as in NATO or laser) and sometimes syllables (as in Benelux).</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Acronym/vs/Ada_Lovelace">Ada Lovelace and Acronym</a> &middot; <a class="rel-more" href="./Acronym">See more &raquo;</a></p><a id="Ada_(programming_language)"></a><h2><a href="./Ada_(programming_language)">Ada (programming language)</a></h2><p class="rel-desc">Ada is a structured, statically typed, imperative, and object-oriented high-level computer programming language, extended from Pascal and other languages.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_(programming_language)/vs/Ada_Lovelace">Ada Lovelace and Ada (programming language)</a> &middot; <a class="rel-more" href="./Ada_(programming_language)">See more &raquo;</a></p><a id="Ada_Initiative"></a><h2><a href="./Ada_Initiative">Ada Initiative</a></h2><p class="rel-desc">The Ada Initiative was a non-profit organization that sought to increase women&#039;s participation in the free culture movement, open source technology and open culture.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Initiative/vs/Ada_Lovelace">Ada Lovelace and Ada Initiative</a> &middot; <a class="rel-more" href="./Ada_Initiative">See more &raquo;</a></p>                    <ins class="adsbygoogle"
+                         style="display:block; text-align:center;"
+                         data-ad-layout="in-article"
+                         data-ad-format="fluid"
+                         data-ad-client="ca-pub-5555190471190823"
+                         data-ad-slot="4868122376"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    <a id="Ada,_the_National_College_for_Digital_Skills"></a><h2><a href="./Ada,_the_National_College_for_Digital_Skills">Ada, the National College for Digital Skills</a></h2><p class="rel-desc">Ada, the National College for Digital Skills. (Ada College) is a further education college in Tottenham Hale, London.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada,_the_National_College_for_Digital_Skills/vs/Ada_Lovelace">Ada Lovelace and Ada, the National College for Digital Skills</a> &middot; <a class="rel-more" href="./Ada,_the_National_College_for_Digital_Skills">See more &raquo;</a></p><a id="Agnes_Scott_College"></a><h2><a href="./Agnes_Scott_College">Agnes Scott College</a></h2><p class="rel-desc">Agnes Scott College (commonly known as Agnes Scott) is a private liberal arts college in downtown Decatur, Georgia.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Agnes_Scott_College">Ada Lovelace and Agnes Scott College</a> &middot; <a class="rel-more" href="./Agnes_Scott_College">See more &raquo;</a></p><a id="Alan_Turing"></a><h2><a href="./Alan_Turing">Alan Turing</a></h2><p class="rel-desc">Alan Mathison Turing (23 June 1912 &ndash; 7 June 1954) was an English computer scientist, mathematician, logician, cryptanalyst, philosopher, and theoretical biologist.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Alan_Turing">Ada Lovelace and Alan Turing</a> &middot; <a class="rel-more" href="./Alan_Turing">See more &raquo;</a></p><a id="Algorithm"></a><h2><a href="./Algorithm">Algorithm</a></h2><p class="rel-desc">In mathematics and computer science, an algorithm is an unambiguous specification of how to solve a class of problems.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Algorithm">Ada Lovelace and Algorithm</a> &middot; <a class="rel-more" href="./Algorithm">See more &raquo;</a></p><a id="Allan_G._Bromley"></a><h2><a href="./Allan_G._Bromley">Allan G. Bromley</a></h2><p class="rel-desc">Allan George Bromley (1 February 1947 &ndash; 16 August 2002) was an Australian historian of computing who became a world authority on many aspects of early computing and was one of the most avid collectors of mechanical calculators.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Allan_G._Bromley">Ada Lovelace and Allan G. Bromley</a> &middot; <a class="rel-more" href="./Allan_G._Bromley">See more &raquo;</a></p><a id="Allegra_Byron"></a><h2><a href="./Allegra_Byron">Allegra Byron</a></h2><p class="rel-desc">Clara Allegra Byron (12 January 1817 &ndash; 20 April 1822) was the illegitimate daughter of the poet George Gordon, Lord Byron and Claire Clairmont.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Allegra_Byron">Ada Lovelace and Allegra Byron</a> &middot; <a class="rel-more" href="./Allegra_Byron">See more &raquo;</a></p><a id="Analytical_Engine"></a><h2><a href="./Analytical_Engine">Analytical Engine</a></h2><p class="rel-desc">The Analytical Engine was a proposed mechanical general-purpose computer designed by English mathematician and computer pioneer Charles Babbage.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Analytical_Engine">Ada Lovelace and Analytical Engine</a> &middot; <a class="rel-more" href="./Analytical_Engine">See more &raquo;</a></p><a id="Andrew_Crosse"></a><h2><a href="./Andrew_Crosse">Andrew Crosse</a></h2><p class="rel-desc">Andrew Crosse (17 June 1784 &ndash; 6 July 1855) was a British amateur scientist who was born and died at Fyne Court, Broomfield, Somerset.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Andrew_Crosse">Ada Lovelace and Andrew Crosse</a> &middot; <a class="rel-more" href="./Andrew_Crosse">See more &raquo;</a></p><a id="Animal_magnetism"></a><h2><a href="./Animal_magnetism">Animal magnetism</a></h2><p class="rel-desc">Animal magnetism, also known as mesmerism, was the name given by the German doctor Franz Mesmer in the 18th century to what he believed to be an invisible natural force (lebensmagnetismus) possessed by all living/animate beings (humans, animals, vegetables, etc.). He believed that the force could have physical effects, including healing.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Animal_magnetism">Ada Lovelace and Animal magnetism</a> &middot; <a class="rel-more" href="./Animal_magnetism">See more &raquo;</a></p><a id="Anne_Blunt,_15th_Baroness_Wentworth"></a><h2><a href="./Anne_Blunt,_15th_Baroness_Wentworth">Anne Blunt, 15th Baroness Wentworth</a></h2><p class="rel-desc">Anne Isabella Noel Blunt, 15th Baroness Wentworth (n&eacute;e King-Noel; 22 September 1837 &ndash; 15 December 1917), known for most of her life as Lady Anne Blunt, was co-founder, with her husband the poet Wilfrid Scawen Blunt, of the Crabbet Arabian Stud.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Anne_Blunt,_15th_Baroness_Wentworth">Ada Lovelace and Anne Blunt, 15th Baroness Wentworth</a> &middot; <a class="rel-more" href="./Anne_Blunt,_15th_Baroness_Wentworth">See more &raquo;</a></p>                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-format="fluid"
+                         data-ad-layout-key="-ea+6m+1v-na+zc"
+                         data-ad-client="ca-pub-5555190471190823"
+                         data-ad-slot="7793630625"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    <a id="Anniversary"></a><h2><a href="./Anniversary">Anniversary</a></h2><p class="rel-desc">An anniversary is the date on which an event took place or an institution was founded in a previous year, and may also refer to the commemoration or celebration of that event.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Anniversary">Ada Lovelace and Anniversary</a> &middot; <a class="rel-more" href="./Anniversary">See more &raquo;</a></p><a id="Arcadia_(play)"></a><h2><a href="./Arcadia_(play)">Arcadia (play)</a></h2><p class="rel-desc">Arcadia is a 1993 play by Tom Stoppard concerning the relationship between past and present, order and disorder, certainty and uncertainty.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Arcadia_(play)">Ada Lovelace and Arcadia (play)</a> &middot; <a class="rel-more" href="./Arcadia_(play)">See more &raquo;</a></p><a id="Artificial_intelligence"></a><h2><a href="./Artificial_intelligence">Artificial intelligence</a></h2><p class="rel-desc">Artificial intelligence (AI, also machine intelligence, MI) is intelligence demonstrated by machines, in contrast to the natural intelligence (NI) displayed by humans and other animals.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Artificial_intelligence">Ada Lovelace and Artificial intelligence</a> &middot; <a class="rel-more" href="./Artificial_intelligence">See more &raquo;</a></p><a id="Augusta_Leigh"></a><h2><a href="./Augusta_Leigh">Augusta Leigh</a></h2><p class="rel-desc">Augusta Maria Leigh (n&eacute;e Byron; 26 January 1783 &ndash; 12 October 1851) was the only daughter of John &quot;Mad Jack&quot; Byron, the poet Lord Byron&#039;s father, by his first wife, Amelia, n&eacute;e Darcy (Lady Conyers in her own right and the divorced wife of Francis, Marquis of Carmarthen).</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Augusta_Leigh">Ada Lovelace and Augusta Leigh</a> &middot; <a class="rel-more" href="./Augusta_Leigh">See more &raquo;</a></p><a id="Augustus_De_Morgan"></a><h2><a href="./Augustus_De_Morgan">Augustus De Morgan</a></h2><p class="rel-desc">Augustus De Morgan (27 June 1806 &ndash; 18 March 1871) was a British mathematician and logician.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Augustus_De_Morgan">Ada Lovelace and Augustus De Morgan</a> &middot; <a class="rel-more" href="./Augustus_De_Morgan">See more &raquo;</a></p><a id="&Ntilde;uSat"></a><h2><a href="./&Ntilde;uSat">&Ntilde;uSat</a></h2><p class="rel-desc">&Ntilde;uSat satellites series (&Ntilde;uSat, pronounced just like the GNU project acronym), also known as codename Fresco, Batata, MilaneSat, Ada, Maryam (named after local culture reference on Argentinean deserts and food), is a series of Argentinean commercial Earth observation satellites constellation designed, built and operated by Satellogic.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/&Ntilde;uSat/vs/Ada_Lovelace">Ada Lovelace and &Ntilde;uSat</a> &middot; <a class="rel-more" href="./&Ntilde;uSat">See more &raquo;</a></p><a id="Baron_Lovelace"></a><h2><a href="./Baron_Lovelace">Baron Lovelace</a></h2><p class="rel-desc">Baron Lovelace, of Hurley in the County of Berks, was a title in the Peerage of England.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Baron_Lovelace">Ada Lovelace and Baron Lovelace</a> &middot; <a class="rel-more" href="./Baron_Lovelace">See more &raquo;</a></p><a id="Baron_Wentworth"></a><h2><a href="./Baron_Wentworth">Baron Wentworth</a></h2><p class="rel-desc">Baron Wentworth is a title in the Peerage of England.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Baron_Wentworth">Ada Lovelace and Baron Wentworth</a> &middot; <a class="rel-more" href="./Baron_Wentworth">See more &raquo;</a></p><a id="BBC_Radio_4"></a><h2><a href="./BBC_Radio_4">BBC Radio 4</a></h2><p class="rel-desc">BBC Radio 4 is a radio station owned and operated by the British Broadcasting Corporation (BBC) that broadcasts a wide variety of spoken-word programmes including news, drama, comedy, science and history.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/BBC_Radio_4">Ada Lovelace and BBC Radio 4</a> &middot; <a class="rel-more" href="./BBC_Radio_4">See more &raquo;</a></p><a id="BCSWomen"></a><h2><a href="./BCSWomen">BCSWomen</a></h2><p class="rel-desc">BCSWomen is a Specialist Group of the British Computer Society The Chartered Institute for IT that provides networking opportunities for all BCS professional women working in IT around the world, as well as mentoring and encouraging girls and women to enter or return to IT as a career..</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/BCSWomen">Ada Lovelace and BCSWomen</a> &middot; <a class="rel-more" href="./BCSWomen">See more &raquo;</a></p><a id="Benjamin_Woolley"></a><h2><a href="./Benjamin_Woolley">Benjamin Woolley</a></h2><p class="rel-desc">Benjamin Woolley is an author, media journalist and television presenter.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Benjamin_Woolley">Ada Lovelace and Benjamin Woolley</a> &middot; <a class="rel-more" href="./Benjamin_Woolley">See more &raquo;</a></p><a id="Bernoulli_number"></a><h2><a href="./Bernoulli_number">Bernoulli number</a></h2><p class="rel-desc">In mathematics, the Bernoulli numbers are a sequence of rational numbers which occur frequently in number theory.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Bernoulli_number">Ada Lovelace and Bernoulli number</a> &middot; <a class="rel-more" href="./Bernoulli_number">See more &raquo;</a></p><a id="Biblioth&egrave;que_universelle_de_Gen&egrave;ve"></a><h2><a href="./Biblioth&egrave;que_universelle_de_Gen&egrave;ve">Biblioth&egrave;que universelle de Gen&egrave;ve</a></h2><p class="rel-desc">The Biblioth&egrave;que universelle was an academic journal published by a group of Genevan scholars first centred on Marc-Auguste Pictet (1752&ndash;1825), later around Auguste Arthur de la Rive (1801&ndash;1873) and other scholars.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Biblioth&egrave;que_universelle_de_Gen&egrave;ve">Ada Lovelace and Biblioth&egrave;que universelle de Gen&egrave;ve</a> &middot; <a class="rel-more" href="./Biblioth&egrave;que_universelle_de_Gen&egrave;ve">See more &raquo;</a></p><a id="Bloodletting"></a><h2><a href="./Bloodletting">Bloodletting</a></h2><p class="rel-desc">Bloodletting (or blood-letting) is the withdrawal of blood from a patient to prevent or cure illness and disease.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Bloodletting">Ada Lovelace and Bloodletting</a> &middot; <a class="rel-more" href="./Bloodletting">See more &raquo;</a></p><a id="Bodleian_Libraries"></a><h2><a href="./Bodleian_Libraries">Bodleian Libraries</a></h2><p class="rel-desc">The Bodleian Libraries are a collection of approximately 40 libraries that serve the University of Oxford in England, including, most famously, the Bodleian Library itself, as well as many other (but not all) central and faculty libraries.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Bodleian_Libraries">Ada Lovelace and Bodleian Libraries</a> &middot; <a class="rel-more" href="./Bodleian_Libraries">See more &raquo;</a></p><a id="Bodleian_Library"></a><h2><a href="./Bodleian_Library">Bodleian Library</a></h2><p class="rel-desc">The Bodleian Library is the main research library of the University of Oxford, and is one of the oldest libraries in Europe.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Bodleian_Library">Ada Lovelace and Bodleian Library</a> &middot; <a class="rel-more" href="./Bodleian_Library">See more &raquo;</a></p><a id="British_Computer_Society"></a><h2><a href="./British_Computer_Society">British Computer Society</a></h2><p class="rel-desc">Sir Maurice Wilkes served as first President of BCS in 1957. The British Computer Society (BCS) is a professional body and a learned society that represents those working in Information Technology, both in the United Kingdom and internationally.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/British_Computer_Society">Ada Lovelace and British Computer Society</a> &middot; <a class="rel-more" href="./British_Computer_Society">See more &raquo;</a></p><a id="Bruce_Sterling"></a><h2><a href="./Bruce_Sterling">Bruce Sterling</a></h2><p class="rel-desc">Michael Bruce Sterling (born April 14, 1954) is an American science fiction author known for his novels and work on the Mirrorshades anthology.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Bruce_Sterling">Ada Lovelace and Bruce Sterling</a> &middot; <a class="rel-more" href="./Bruce_Sterling">See more &raquo;</a></p><a id="Byron_King-Noel,_Viscount_Ockham"></a><h2><a href="./Byron_King-Noel,_Viscount_Ockham">Byron King-Noel, Viscount Ockham</a></h2><p class="rel-desc">Byron King-Noel, 12th Baron Wentworth, styled Viscount Ockham (12 May 1836 &ndash; 1 September 1862) was a British peer and the eldest of the three legitimate grandchildren of George Gordon, Lord Byron.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Byron_King-Noel,_Viscount_Ockham">Ada Lovelace and Byron King-Noel, Viscount Ockham</a> &middot; <a class="rel-more" href="./Byron_King-Noel,_Viscount_Ockham">See more &raquo;</a></p><a id="Carl_Reichenbach"></a><h2><a href="./Carl_Reichenbach">Carl Reichenbach</a></h2><p class="rel-desc">Baron Dr.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Carl_Reichenbach">Ada Lovelace and Carl Reichenbach</a> &middot; <a class="rel-more" href="./Carl_Reichenbach">See more &raquo;</a></p><a id="Chaos_theory"></a><h2><a href="./Chaos_theory">Chaos theory</a></h2><p class="rel-desc">Chaos theory is a branch of mathematics focusing on the behavior of dynamical systems that are highly sensitive to initial conditions.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Chaos_theory">Ada Lovelace and Chaos theory</a> &middot; <a class="rel-more" href="./Chaos_theory">See more &raquo;</a></p><a id="Charles_Babbage"></a><h2><a href="./Charles_Babbage">Charles Babbage</a></h2><p class="rel-desc">Charles Babbage (26 December 1791 &ndash; 18 October 1871) was an English polymath.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Charles_Babbage">Ada Lovelace and Charles Babbage</a> &middot; <a class="rel-more" href="./Charles_Babbage">See more &raquo;</a></p><a id="Charles_Barry"></a><h2><a href="./Charles_Barry">Charles Barry</a></h2><p class="rel-desc">Sir Charles Barry (23 May 1795 &ndash; 12 May 1860) was an English architect, best known for his role in the rebuilding of the Palace of Westminster (also known as the Houses of Parliament) in London during the mid-19th century, but also responsible for numerous other buildings and gardens.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Charles_Barry">Ada Lovelace and Charles Barry</a> &middot; <a class="rel-more" href="./Charles_Barry">See more &raquo;</a></p><a id="Charles_Dickens"></a><h2><a href="./Charles_Dickens">Charles Dickens</a></h2><p class="rel-desc">Charles John Huffam Dickens (7 February 1812 &ndash; 9 June 1870) was an English writer and social critic.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Charles_Dickens">Ada Lovelace and Charles Dickens</a> &middot; <a class="rel-more" href="./Charles_Dickens">See more &raquo;</a></p><a id="Charles_Wheatstone"></a><h2><a href="./Charles_Wheatstone">Charles Wheatstone</a></h2><p class="rel-desc">Sir Charles Wheatstone FRS (6 February 1802 &ndash; 19 October 1875), was an English scientist and inventor of many scientific breakthroughs of the Victorian era, including the English concertina, the stereoscope (a device for displaying three-dimensional images), and the Playfair cipher (an encryption technique).</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Charles_Wheatstone">Ada Lovelace and Charles Wheatstone</a> &middot; <a class="rel-more" href="./Charles_Wheatstone">See more &raquo;</a></p><a id="Childe_Byron"></a><h2><a href="./Childe_Byron">Childe Byron</a></h2><p class="rel-desc">Childe Byron is a 1977 play by Romulus Linney about the strained relationship between the poet, Lord Byron, and his daughter, Ada Lovelace.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Childe_Byron">Ada Lovelace and Childe Byron</a> &middot; <a class="rel-more" href="./Childe_Byron">See more &raquo;</a></p><a id="Church_of_St_Mary_Magdalene,_Hucknall"></a><h2><a href="./Church_of_St_Mary_Magdalene,_Hucknall">Church of St Mary Magdalene, Hucknall</a></h2><p class="rel-desc">The Church of St.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Church_of_St_Mary_Magdalene,_Hucknall">Ada Lovelace and Church of St Mary Magdalene, Hucknall</a> &middot; <a class="rel-more" href="./Church_of_St_Mary_Magdalene,_Hucknall">See more &raquo;</a></p><a id="Claire_Clairmont"></a><h2><a href="./Claire_Clairmont">Claire Clairmont</a></h2><p class="rel-desc">Clara Mary Jane Clairmont (27 April 1798 &ndash; 19 March 1879), or Claire Clairmont as she was commonly known, was the stepsister of writer Mary Shelley and the mother of Lord Byron&#039;s daughter Allegra.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Claire_Clairmont">Ada Lovelace and Claire Clairmont</a> &middot; <a class="rel-more" href="./Claire_Clairmont">See more &raquo;</a></p><a id="Code:_Debugging_the_Gender_Gap"></a><h2><a href="./Code:_Debugging_the_Gender_Gap">Code: Debugging the Gender Gap</a></h2><p class="rel-desc">CODE: Debugging the Gender Gap is a 2015 documentary by Robin Hauser Reynolds.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Code:_Debugging_the_Gender_Gap">Ada Lovelace and Code: Debugging the Gender Gap</a> &middot; <a class="rel-more" href="./Code:_Debugging_the_Gender_Gap">See more &raquo;</a></p><a id="Computability"></a><h2><a href="./Computability">Computability</a></h2><p class="rel-desc">Computability is the ability to solve a problem in an effective manner.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Computability">Ada Lovelace and Computability</a> &middot; <a class="rel-more" href="./Computability">See more &raquo;</a></p><a id="Computer"></a><h2><a href="./Computer">Computer</a></h2><p class="rel-desc">A computer is a device that can be instructed to carry out sequences of arithmetic or logical operations automatically via computer programming.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Computer">Ada Lovelace and Computer</a> &middot; <a class="rel-more" href="./Computer">See more &raquo;</a></p><a id="Computing"></a><h2><a href="./Computing">Computing</a></h2><p class="rel-desc">Computing is any goal-oriented activity requiring, benefiting from, or creating computers.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Computing">Ada Lovelace and Computing</a> &middot; <a class="rel-more" href="./Computing">See more &raquo;</a></p><a id="Computing_Machinery_and_Intelligence"></a><h2><a href="./Computing_Machinery_and_Intelligence">Computing Machinery and Intelligence</a></h2><p class="rel-desc">&quot;Computing Machinery and Intelligence&quot; is a seminal paper written by Alan Turing on the topic of artificial intelligence.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Computing_Machinery_and_Intelligence">Ada Lovelace and Computing Machinery and Intelligence</a> &middot; <a class="rel-more" href="./Computing_Machinery_and_Intelligence">See more &raquo;</a></p><a id="Conceiving_Ada"></a><h2><a href="./Conceiving_Ada">Conceiving Ada</a></h2><p class="rel-desc">Conceiving Ada is a 1997 film produced, written, and directed by Lynn Hershman Leeson.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Conceiving_Ada">Ada Lovelace and Conceiving Ada</a> &middot; <a class="rel-more" href="./Conceiving_Ada">See more &raquo;</a></p><a id="Crossrail"></a><h2><a href="./Crossrail">Crossrail</a></h2><p class="rel-desc">Crossrail is a railway line under development in London and the home counties of Berkshire, Buckinghamshire and Essex, England.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Crossrail">Ada Lovelace and Crossrail</a> &middot; <a class="rel-more" href="./Crossrail">See more &raquo;</a></p><a id="David_Brewster"></a><h2><a href="./David_Brewster">David Brewster</a></h2><p class="rel-desc">Sir David Brewster KH PRSE FRS FSA(Scot) FSSA MICE (11 December 178110 February 1868) was a British scientist, inventor, author, and academic administrator.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/David_Brewster">Ada Lovelace and David Brewster</a> &middot; <a class="rel-more" href="./David_Brewster">See more &raquo;</a></p><a id="Debutante"></a><h2><a href="./Debutante">Debutante</a></h2><p class="rel-desc">A debutante or deb (from the French d&eacute;butante, &quot;female beginner&quot;) is a girl or young woman of an aristocratic or upper-class family who has reached maturity and, as a new adult, comes out into society at a formal &quot;debut&quot;.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Debutante">Ada Lovelace and Debutante</a> &middot; <a class="rel-more" href="./Debutante">See more &raquo;</a></p><a id="Difference_engine"></a><h2><a href="./Difference_engine">Difference engine</a></h2><p class="rel-desc">A difference engine is an automatic mechanical calculator designed to tabulate polynomial functions.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Difference_engine">Ada Lovelace and Difference engine</a> &middot; <a class="rel-more" href="./Difference_engine">See more &raquo;</a></p><a id="Differential_calculus"></a><h2><a href="./Differential_calculus">Differential calculus</a></h2><p class="rel-desc">In mathematics, differential calculus is a subfield of calculus concerned with the study of the rates at which quantities change.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Differential_calculus">Ada Lovelace and Differential calculus</a> &middot; <a class="rel-more" href="./Differential_calculus">See more &raquo;</a></p><a id="Doron_Swade"></a><h2><a href="./Doron_Swade">Doron Swade</a></h2><p class="rel-desc">Doron Swade MBE is a museum curator and author, specialising in the history of computing.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Doron_Swade">Ada Lovelace and Doron Swade</a> &middot; <a class="rel-more" href="./Doron_Swade">See more &raquo;</a></p><a id="Earl_of_Lovelace"></a><h2><a href="./Earl_of_Lovelace">Earl of Lovelace</a></h2><p class="rel-desc">Earl of Lovelace was a title in the Peerage of the United Kingdom.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Earl_of_Lovelace">Ada Lovelace and Earl of Lovelace</a> &middot; <a class="rel-more" href="./Earl_of_Lovelace">See more &raquo;</a></p><a id="Earth_observation"></a><h2><a href="./Earth_observation">Earth observation</a></h2><p class="rel-desc">Earth observation (EO) is the gathering of information about the physical, chemical, and biological systems of the planet via remote-sensing technologies, supplemented by Earth-surveying techniques, which encompasses the collection, analysis, and presentation of data.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Earth_observation">Ada Lovelace and Earth observation</a> &middot; <a class="rel-more" href="./Earth_observation">See more &raquo;</a></p><a id="East_Horsley"></a><h2><a href="./East_Horsley">East Horsley</a></h2><p class="rel-desc">East Horsley is a village and civil parish in Surrey, England.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/East_Horsley">Ada Lovelace and East Horsley</a> &middot; <a class="rel-more" href="./East_Horsley">See more &raquo;</a></p><a id="Elizabeth_Medora_Leigh"></a><h2><a href="./Elizabeth_Medora_Leigh">Elizabeth Medora Leigh</a></h2><p class="rel-desc">Elizabeth Medora Leigh (15 April 1814 &amp;ndash; 28 August 1849) was the third daughter of Augusta Leigh.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Elizabeth_Medora_Leigh">Ada Lovelace and Elizabeth Medora Leigh</a> &middot; <a class="rel-more" href="./Elizabeth_Medora_Leigh">See more &raquo;</a></p><a id="Emerald_Fennell"></a><h2><a href="./Emerald_Fennell">Emerald Fennell</a></h2><p class="rel-desc">Emerald Lilly Fennell (born 1 October 1985) is a British actress and author.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Emerald_Fennell">Ada Lovelace and Emerald Fennell</a> &middot; <a class="rel-more" href="./Emerald_Fennell">See more &raquo;</a></p><a id="Free-culture_movement"></a><h2><a href="./Free-culture_movement">Free-culture movement</a></h2><p class="rel-desc">The free-culture movement is a social movement that promotes the freedom to distribute and modify creative works in the form of free content or open content by using the Internet and other forms of media.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Free-culture_movement">Ada Lovelace and Free-culture movement</a> &middot; <a class="rel-more" href="./Free-culture_movement">See more &raquo;</a></p><a id="French_language"></a><h2><a href="./French_language">French language</a></h2><p class="rel-desc">French (le fran&ccedil;ais or la langue fran&ccedil;aise) is a Romance language of the Indo-European family.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/French_language">Ada Lovelace and French language</a> &middot; <a class="rel-more" href="./French_language">See more &raquo;</a></p><a id="George_Gordon_of_Gight"></a><h2><a href="./George_Gordon_of_Gight">George Gordon of Gight</a></h2><p class="rel-desc">George Gordon (14 November 1741 &ndash; 9 January 1779) was the maternal grandfather of poet George Gordon Byron and a descendant of King James I of Scotland and of Cardinal Beaton.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/George_Gordon_of_Gight">Ada Lovelace and George Gordon of Gight</a> &middot; <a class="rel-more" href="./George_Gordon_of_Gight">See more &raquo;</a></p><a id="Gight"></a><h2><a href="./Gight">Gight</a></h2><p class="rel-desc">Gight is the name of an estate in the parish of Fyvie in the Formartine area of Aberdeenshire, Scotland, United Kingdom.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Gight">Ada Lovelace and Gight</a> &middot; <a class="rel-more" href="./Gight">See more &raquo;</a></p><a id="Given_name"></a><h2><a href="./Given_name">Given name</a></h2><p class="rel-desc">A given name (also known as a first name, forename or Christian name) is a part of a person&#039;s personal name.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Given_name">Ada Lovelace and Given name</a> &middot; <a class="rel-more" href="./Given_name">See more &raquo;</a></p><a id="Google_Doodle"></a><h2><a href="./Google_Doodle">Google Doodle</a></h2><p class="rel-desc">A Google Doodle is a special, temporary alteration of the logo on Google&#039;s homepages that commemorates holidays, events, achievements, and people.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Google_Doodle">Ada Lovelace and Google Doodle</a> &middot; <a class="rel-more" href="./Google_Doodle">See more &raquo;</a></p><a id="Gothic_Revival_architecture"></a><h2><a href="./Gothic_Revival_architecture">Gothic Revival architecture</a></h2><p class="rel-desc">Gothic Revival (also referred to as Victorian Gothic or neo-Gothic) is an architectural movement that began in the late 1740s in England.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Gothic_Revival_architecture">Ada Lovelace and Gothic Revival architecture</a> &middot; <a class="rel-more" href="./Gothic_Revival_architecture">See more &raquo;</a></p><a id="Great_Lives"></a><h2><a href="./Great_Lives">Great Lives</a></h2><p class="rel-desc">Great Lives is a BBC Radio 4 biography series, produced in Bristol.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Great_Lives">Ada Lovelace and Great Lives</a> &middot; <a class="rel-more" href="./Great_Lives">See more &raquo;</a></p><a id="Greek_War_of_Independence"></a><h2><a href="./Greek_War_of_Independence">Greek War of Independence</a></h2><p class="rel-desc">The Greek War of Independence, also known as the Greek Revolution (&Epsilon;&lambda;&lambda;&eta;&nu;&iota;&kappa;ή &Epsilon;&pi;&alpha;&nu;ά&sigma;&tau;&alpha;&sigma;&eta;, Elliniki Epanastasi, or also referred to by Greeks in the 19th century as the &Alpha;&gamma;ώ&nu;&alpha;&sigmaf;, Agonas, &quot;Struggle&quot;; Ottoman: يونان عصياني Yunan İsyanı, &quot;Greek Uprising&quot;), was a successful war of independence waged by Greek revolutionaries against the Ottoman Empire between 1821 and 1830.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Greek_War_of_Independence">Ada Lovelace and Greek War of Independence</a> &middot; <a class="rel-more" href="./Greek_War_of_Independence">See more &raquo;</a></p><a id="Harvard_University"></a><h2><a href="./Harvard_University">Harvard University</a></h2><p class="rel-desc">Harvard University is a private Ivy League research university in Cambridge, Massachusetts.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Harvard_University">Ada Lovelace and Harvard University</a> &middot; <a class="rel-more" href="./Harvard_University">See more &raquo;</a></p><a id="History_of_computing"></a><h2><a href="./History_of_computing">History of computing</a></h2><p class="rel-desc">The history of computing is longer than the history of computing hardware and modern computing technology and includes the history of methods intended for pen and paper or for chalk and slate, with or without the aid of tables.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/History_of_computing">Ada Lovelace and History of computing</a> &middot; <a class="rel-more" href="./History_of_computing">See more &raquo;</a></p><a id="History_of_computing_hardware"></a><h2><a href="./History_of_computing_hardware">History of computing hardware</a></h2><p class="rel-desc">The history of computing hardware covers the developments from early simple devices to aid calculation to modern day computers.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/History_of_computing_hardware">Ada Lovelace and History of computing hardware</a> &middot; <a class="rel-more" href="./History_of_computing_hardware">See more &raquo;</a></p><a id="Insanity"></a><h2><a href="./Insanity">Insanity</a></h2><p class="rel-desc">Insanity, craziness, or madness is a spectrum of both group and individual behaviors characterized by certain abnormal mental or behavioral patterns.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Insanity">Ada Lovelace and Insanity</a> &middot; <a class="rel-more" href="./Insanity">See more &raquo;</a></p><a id="International_Women&#039;s_Day"></a><h2><a href="./International_Women&#039;s_Day">International Women&#039;s Day</a></h2><p class="rel-desc">International Women&#039;s Day (IWD) is celebrated on March 8 every year.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/International_Women&#039;s_Day">Ada Lovelace and International Women&#039;s Day</a> &middot; <a class="rel-more" href="./International_Women&#039;s_Day">See more &raquo;</a></p><a id="Israel_Institute_for_Advanced_Studies"></a><h2><a href="./Israel_Institute_for_Advanced_Studies">Israel Institute for Advanced Studies</a></h2><p class="rel-desc">The Israel Institute for Advanced Studies (IIAS or IAS in Israel) of Jerusalem, Israel (Hebrew: המכון ללימודים מתקדמים) is a national institution devoted to academic research in physics, mathematics, the life sciences, economics, and comparative religion.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Israel_Institute_for_Advanced_Studies">Ada Lovelace and Israel Institute for Advanced Studies</a> &middot; <a class="rel-more" href="./Israel_Institute_for_Advanced_Studies">See more &raquo;</a></p><a id="John_Byron"></a><h2><a href="./John_Byron">John Byron</a></h2><p class="rel-desc">Vice-Admiral The Hon.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/John_Byron">Ada Lovelace and John Byron</a> &middot; <a class="rel-more" href="./John_Byron">See more &raquo;</a></p><a id="John_Byron_(British_Army_officer)"></a><h2><a href="./John_Byron_(British_Army_officer)">John Byron (British Army officer)</a></h2><p class="rel-desc">Captain John Byron (7 February 1756 &ndash; 2 August 1791) was a British Army officer and writer, best known as the father of poet Lord Byron.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/John_Byron_(British_Army_officer)">Ada Lovelace and John Byron (British Army officer)</a> &middot; <a class="rel-more" href="./John_Byron_(British_Army_officer)">See more &raquo;</a></p><a id="John_Crowley"></a><h2><a href="./John_Crowley">John Crowley</a></h2><p class="rel-desc">John Crowley (born December 1, 1942) is an American author of fantasy, science fiction and mainstream fiction.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/John_Crowley">Ada Lovelace and John Crowley</a> &middot; <a class="rel-more" href="./John_Crowley">See more &raquo;</a></p><a id="John_Graham-Cumming"></a><h2><a href="./John_Graham-Cumming">John Graham-Cumming</a></h2><p class="rel-desc">John Graham-Cumming is a British programmer and writer best known for having originated a successful petition to the British Government asking for an apology for its persecution of Alan Turing.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/John_Graham-Cumming">Ada Lovelace and John Graham-Cumming</a> &middot; <a class="rel-more" href="./John_Graham-Cumming">See more &raquo;</a></p><a id="John_Hobhouse,_1st_Baron_Broughton"></a><h2><a href="./John_Hobhouse,_1st_Baron_Broughton">John Hobhouse, 1st Baron Broughton</a></h2><p class="rel-desc">John Cam Hobhouse, 1st Baron Broughton, (27 June 1786 &ndash; 3 June 1869), known as Sir John Hobhouse, Bt, from 1831 to 1851, was an English politician and diarist.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/John_Hobhouse,_1st_Baron_Broughton">Ada Lovelace and John Hobhouse, 1st Baron Broughton</a> &middot; <a class="rel-more" href="./John_Hobhouse,_1st_Baron_Broughton">See more &raquo;</a></p><a id="Jordan_Stratford"></a><h2><a href="./Jordan_Stratford">Jordan Stratford</a></h2><p class="rel-desc">Jordan Stratford is a Canadian author of children&#039;s fiction.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Jordan_Stratford">Ada Lovelace and Jordan Stratford</a> &middot; <a class="rel-more" href="./Jordan_Stratford">See more &raquo;</a></p><a id="Kirkby_Mallory"></a><h2><a href="./Kirkby_Mallory">Kirkby Mallory</a></h2><p class="rel-desc">Kirkby Mallory is a hamlet in Leicestershire, England that is part of the civil parish of Peckleton.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Kirkby_Mallory">Ada Lovelace and Kirkby Mallory</a> &middot; <a class="rel-more" href="./Kirkby_Mallory">See more &raquo;</a></p><a id="Kirkby-in-Ashfield"></a><h2><a href="./Kirkby-in-Ashfield">Kirkby-in-Ashfield</a></h2><p class="rel-desc">Kirkby-in-Ashfield is a market town in Nottinghamshire, England, with a population of 25,265 (according to the 2001 National Census), falling to 20,672 for the total of the 3 Ashfield Wards taken at the 2011 census.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Kirkby-in-Ashfield">Ada Lovelace and Kirkby-in-Ashfield</a> &middot; <a class="rel-more" href="./Kirkby-in-Ashfield">See more &raquo;</a></p><a id="Lady_Byron"></a><h2><a href="./Lady_Byron">Lady Byron</a></h2><p class="rel-desc">Anne Isabella Noel Byron, 11th Baroness Wentworth and Baroness Byron (n&eacute;e Milbanke; 17 May 1792 &ndash; 16 May 1860), nicknamed Annabella and commonly known as Lady Byron, was the wife of poet George Gordon Byron, more commonly known as Lord Byron.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Lady_Byron">Ada Lovelace and Lady Byron</a> &middot; <a class="rel-more" href="./Lady_Byron">See more &raquo;</a></p><a id="Lauren_Gunderson"></a><h2><a href="./Lauren_Gunderson">Lauren Gunderson</a></h2><p class="rel-desc">Lauren Gunderson (born February 5, 1982) is an American playwright, born in Atlanta.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Lauren_Gunderson">Ada Lovelace and Lauren Gunderson</a> &middot; <a class="rel-more" href="./Lauren_Gunderson">See more &raquo;</a></p><a id="List_of_pioneers_in_computer_science"></a><h2><a href="./List_of_pioneers_in_computer_science">List of pioneers in computer science</a></h2><p class="rel-desc">This article presents a list of individuals who made transformative breakthroughs in the creation, development and imagining of what computers and electronics could do.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/List_of_pioneers_in_computer_science">Ada Lovelace and List of pioneers in computer science</a> &middot; <a class="rel-more" href="./List_of_pioneers_in_computer_science">See more &raquo;</a></p><a id="Lord_Byron"></a><h2><a href="./Lord_Byron">Lord Byron</a></h2><p class="rel-desc">George Gordon Byron, 6th Baron Byron (22 January 1788 &ndash; 19 April 1824), known as Lord Byron, was an English nobleman, poet, peer, politician, and leading figure in the Romantic movement.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Lord_Byron">Ada Lovelace and Lord Byron</a> &middot; <a class="rel-more" href="./Lord_Byron">See more &raquo;</a></p><a id="Los_Angeles_Times"></a><h2><a href="./Los_Angeles_Times">Los Angeles Times</a></h2><p class="rel-desc">The Los Angeles Times is a daily newspaper which has been published in Los Angeles, California since 1881.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Los_Angeles_Times">Ada Lovelace and Los Angeles Times</a> &middot; <a class="rel-more" href="./Los_Angeles_Times">See more &raquo;</a></p><a id="Lovelace_Medal"></a><h2><a href="./Lovelace_Medal">Lovelace Medal</a></h2><p class="rel-desc">The Lovelace Medal was established by the British Computer Society in 1998, and is presented to individuals who have made outstanding contributions to the understanding or advancement of Computing.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Lovelace_Medal">Ada Lovelace and Lovelace Medal</a> &middot; <a class="rel-more" href="./Lovelace_Medal">See more &raquo;</a></p><a id="Luigi_Federico_Menabrea"></a><h2><a href="./Luigi_Federico_Menabrea">Luigi Federico Menabrea</a></h2><p class="rel-desc">Luigi Federico Menabrea (4 September 1809 &amp;ndash; 24 May 1896), later made 1st Count Menabrea and 1st Marquess of Valdora, was an Italian general, statesman and mathematician who served as the Prime Minister of Italy from 1867 to 1869.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Luigi_Federico_Menabrea">Ada Lovelace and Luigi Federico Menabrea</a> &middot; <a class="rel-more" href="./Luigi_Federico_Menabrea">See more &raquo;</a></p><a id="Mary_Shelley"></a><h2><a href="./Mary_Shelley">Mary Shelley</a></h2><p class="rel-desc">Mary Wollstonecraft Shelley (n&eacute;e Godwin; 30 August 1797 &ndash; 1 February 1851) was an English novelist, short story writer, dramatist, essayist, biographer, and travel writer, best known for her Gothic novel &#039;&#039;Frankenstein: or, The Modern Prometheus&#039;&#039; (1818).</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Mary_Shelley">Ada Lovelace and Mary Shelley</a> &middot; <a class="rel-more" href="./Mary_Shelley">See more &raquo;</a></p><a id="Mary_Somerville"></a><h2><a href="./Mary_Somerville">Mary Somerville</a></h2><p class="rel-desc">Mary Somerville (n&eacute;e Fairfax, formerly Greig; 26 December 1780 &ndash; 29 November 1872), was a Scottish science writer and polymath.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Mary_Somerville">Ada Lovelace and Mary Somerville</a> &middot; <a class="rel-more" href="./Mary_Somerville">See more &raquo;</a></p><a id="Marylebone"></a><h2><a href="./Marylebone">Marylebone</a></h2><p class="rel-desc">Marylebone (or, both appropriate for the Parish Church of St. Marylebone,,, or) is an affluent inner-city area of central London, England, located within the City of Westminster and part of the West End.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Marylebone">Ada Lovelace and Marylebone</a> &middot; <a class="rel-more" href="./Marylebone">See more &raquo;</a></p><a id="Massachusetts"></a><h2><a href="./Massachusetts">Massachusetts</a></h2><p class="rel-desc">Massachusetts, officially known as the Commonwealth of Massachusetts, is the most populous state in the New England region of the northeastern United States.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Massachusetts">Ada Lovelace and Massachusetts</a> &middot; <a class="rel-more" href="./Massachusetts">See more &raquo;</a></p><a id="Masterpiece_(TV_series)"></a><h2><a href="./Masterpiece_(TV_series)">Masterpiece (TV series)</a></h2><p class="rel-desc">Masterpiece (formerly known as Masterpiece Theatre) is a drama anthology television series produced by WGBH Boston.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Masterpiece_(TV_series)">Ada Lovelace and Masterpiece (TV series)</a> &middot; <a class="rel-more" href="./Masterpiece_(TV_series)">See more &raquo;</a></p><a id="Mathematician"></a><h2><a href="./Mathematician">Mathematician</a></h2><p class="rel-desc">A mathematician is someone who uses an extensive knowledge of mathematics in his or her work, typically to solve mathematical problems.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Mathematician">Ada Lovelace and Mathematician</a> &middot; <a class="rel-more" href="./Mathematician">See more &raquo;</a></p><a id="Mathematics"></a><h2><a href="./Mathematics">Mathematics</a></h2><p class="rel-desc">Mathematics (from Greek &mu;ά&theta;&eta;&mu;&alpha; m&aacute;thēma, &quot;knowledge, study, learning&quot;) is the study of such topics as quantity, structure, space, and change.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Mathematics">Ada Lovelace and Mathematics</a> &middot; <a class="rel-more" href="./Mathematics">See more &raquo;</a></p><a id="Measles"></a><h2><a href="./Measles">Measles</a></h2><p class="rel-desc">Measles is a highly contagious infectious disease caused by the measles virus.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Measles">Ada Lovelace and Measles</a> &middot; <a class="rel-more" href="./Measles">See more &raquo;</a></p><a id="Metaphysics"></a><h2><a href="./Metaphysics">Metaphysics</a></h2><p class="rel-desc">Metaphysics is a branch of philosophy that explores the nature of being, existence, and reality.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Metaphysics">Ada Lovelace and Metaphysics</a> &middot; <a class="rel-more" href="./Metaphysics">See more &raquo;</a></p><a id="Michael_Faraday"></a><h2><a href="./Michael_Faraday">Michael Faraday</a></h2><p class="rel-desc">Michael Faraday FRS (22 September 1791 &ndash; 25 August 1867) was an English scientist who contributed to the study of electromagnetism and electrochemistry.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Michael_Faraday">Ada Lovelace and Michael Faraday</a> &middot; <a class="rel-more" href="./Michael_Faraday">See more &raquo;</a></p><a id="Milbanke_baronets"></a><h2><a href="./Milbanke_baronets">Milbanke baronets</a></h2><p class="rel-desc">The Milbanke, later Noel, later Milbanke Baronetcy, of Halnaby in the County of York, was a title in the Baronetage of England.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Milbanke_baronets">Ada Lovelace and Milbanke baronets</a> &middot; <a class="rel-more" href="./Milbanke_baronets">See more &raquo;</a></p><a id="New_Scientist"></a><h2><a href="./New_Scientist">New Scientist</a></h2><p class="rel-desc">New Scientist, first published on 22 November 1956, is a weekly, English-language magazine that covers all aspects of science and technology.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/New_Scientist">Ada Lovelace and New Scientist</a> &middot; <a class="rel-more" href="./New_Scientist">See more &raquo;</a></p><a id="Ockham_Park"></a><h2><a href="./Ockham_Park">Ockham Park</a></h2><p class="rel-desc">Ockham Park is a seventeenth century English country house in Ockham, Surrey.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Ockham_Park">Ada Lovelace and Ockham Park</a> &middot; <a class="rel-more" href="./Ockham_Park">See more &raquo;</a></p><a id="Open-source_model"></a><h2><a href="./Open-source_model">Open-source model</a></h2><p class="rel-desc">The open-source model is a decentralized software-development model that encourages open collaboration.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Open-source_model">Ada Lovelace and Open-source model</a> &middot; <a class="rel-more" href="./Open-source_model">See more &raquo;</a></p><a id="Oxford"></a><h2><a href="./Oxford">Oxford</a></h2><p class="rel-desc">Oxford is a city in the South East region of England and the county town of Oxfordshire.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Oxford">Ada Lovelace and Oxford</a> &middot; <a class="rel-more" href="./Oxford">See more &raquo;</a></p><a id="Pattern"></a><h2><a href="./Pattern">Pattern</a></h2><p class="rel-desc">A pattern is a discernible regularity in the world or in a manmade design.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Pattern">Ada Lovelace and Pattern</a> &middot; <a class="rel-more" href="./Pattern">See more &raquo;</a></p><a id="Phrenology"></a><h2><a href="./Phrenology">Phrenology</a></h2><p class="rel-desc">Phrenology is a pseudomedicine primarily focused on measurements of the human skull, based on the concept that the brain is the organ of the mind, and that certain brain areas have localized, specific functions or modules.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Phrenology">Ada Lovelace and Phrenology</a> &middot; <a class="rel-more" href="./Phrenology">See more &raquo;</a></p><a id="Porlock"></a><h2><a href="./Porlock">Porlock</a></h2><p class="rel-desc">Porlock is a coastal village in Somerset, England, west of Minehead.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Porlock">Ada Lovelace and Porlock</a> &middot; <a class="rel-more" href="./Porlock">See more &raquo;</a></p><a id="Porlock_Weir"></a><h2><a href="./Porlock_Weir">Porlock Weir</a></h2><p class="rel-desc">Porlock Weir, about 1.5 miles west of the inland village of Porlock, Somerset, England, is a small settlement around a harbour.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Porlock_Weir">Ada Lovelace and Porlock Weir</a> &middot; <a class="rel-more" href="./Porlock_Weir">See more &raquo;</a></p><a id="Prime_Minister_of_Italy"></a><h2><a href="./Prime_Minister_of_Italy">Prime Minister of Italy</a></h2><p class="rel-desc">The President of the Council of Ministers of the Italian Republic (Italian: Presidente del Consiglio dei ministri della Repubblica Italiana), commonly referred to in Italy as Presidente del Consiglio, or informally as Premier and known in English as the Prime Minister of Italy, is the head of government of the Italian Republic.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Prime_Minister_of_Italy">Ada Lovelace and Prime Minister of Italy</a> &middot; <a class="rel-more" href="./Prime_Minister_of_Italy">See more &raquo;</a></p><a id="Programmer"></a><h2><a href="./Programmer">Programmer</a></h2><p class="rel-desc">A programmer, developer, dev, coder, or software engineer is a person who creates computer software.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Programmer">Ada Lovelace and Programmer</a> &middot; <a class="rel-more" href="./Programmer">See more &raquo;</a></p><a id="Punched_card"></a><h2><a href="./Punched_card">Punched card</a></h2><p class="rel-desc">A punched card or punch card is a piece of stiff paper that can be used to contain digital data represented by the presence or absence of holes in predefined positions.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Punched_card">Ada Lovelace and Punched card</a> &middot; <a class="rel-more" href="./Punched_card">See more &raquo;</a></p><a id="Ralph_King-Milbanke,_2nd_Earl_of_Lovelace"></a><h2><a href="./Ralph_King-Milbanke,_2nd_Earl_of_Lovelace">Ralph King-Milbanke, 2nd Earl of Lovelace</a></h2><p class="rel-desc">Ralph Gordon King Noel Milbanke, 2nd Earl of Lovelace (2 July 1839 &ndash; 28 August 1906) was a British author of Astarte: A Fragment of Truth concerning George Gordon Byron, first Lord Byron.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Ralph_King-Milbanke,_2nd_Earl_of_Lovelace">Ada Lovelace and Ralph King-Milbanke, 2nd Earl of Lovelace</a> &middot; <a class="rel-more" href="./Ralph_King-Milbanke,_2nd_Earl_of_Lovelace">See more &raquo;</a></p><a id="Richard_Taylor_(editor)"></a><h2><a href="./Richard_Taylor_(editor)">Richard Taylor (editor)</a></h2><p class="rel-desc">Richard Taylor (18 May 1781 &ndash; 1 December 1858) was an English naturalist and publisher of scientific journals.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Richard_Taylor_(editor)">Ada Lovelace and Richard Taylor (editor)</a> &middot; <a class="rel-more" href="./Richard_Taylor_(editor)">See more &raquo;</a></p><a id="Romulus_Linney_(playwright)"></a><h2><a href="./Romulus_Linney_(playwright)">Romulus Linney (playwright)</a></h2><p class="rel-desc">Romulus Zachariah Linney IV (September 21, 1930 &amp;ndash; January 15, 2011) was an American playwright and novelist.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Romulus_Linney_(playwright)">Ada Lovelace and Romulus Linney (playwright)</a> &middot; <a class="rel-more" href="./Romulus_Linney_(playwright)">See more &raquo;</a></p><a id="Ross-shire"></a><h2><a href="./Ross-shire">Ross-shire</a></h2><p class="rel-desc">Ross-shire (Siorrachd Rois) is a historic county in the Scottish Highlands.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Ross-shire">Ada Lovelace and Ross-shire</a> &middot; <a class="rel-more" href="./Ross-shire">See more &raquo;</a></p><a id="Satellogic"></a><h2><a href="./Satellogic">Satellogic</a></h2><p class="rel-desc">Satellogic is an Argentine company specialized in Earth-observation satellites, founded in 2010 by Emiliano Kargieman.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Satellogic">Ada Lovelace and Satellogic</a> &middot; <a class="rel-more" href="./Satellogic">See more &raquo;</a></p><a id="Science_Museum,_London"></a><h2><a href="./Science_Museum,_London">Science Museum, London</a></h2><p class="rel-desc">The Science Museum is a major museum on Exhibition Road in South Kensington, London.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Science_Museum,_London">Ada Lovelace and Science Museum, London</a> &middot; <a class="rel-more" href="./Science_Museum,_London">See more &raquo;</a></p><a id="ScienceDirect"></a><h2><a href="./ScienceDirect">ScienceDirect</a></h2><p class="rel-desc">ScienceDirect is a website which provides subscription-based access to a large database of scientific and medical research.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/ScienceDirect">Ada Lovelace and ScienceDirect</a> &middot; <a class="rel-more" href="./ScienceDirect">See more &raquo;</a></p><a id="Scientific_Memoirs"></a><h2><a href="./Scientific_Memoirs">Scientific Memoirs</a></h2><p class="rel-desc">Scientific Memoirs, Selected from the Transactions of Foreign Academies of science and Learned Societies and from Foreign Journals was a series of books edited and published by Richard Taylor (1781&ndash;1858) in London between 1837 and 1852.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Scientific_Memoirs">Ada Lovelace and Scientific Memoirs</a> &middot; <a class="rel-more" href="./Scientific_Memoirs">See more &raquo;</a></p><a id="Second_law_of_thermodynamics"></a><h2><a href="./Second_law_of_thermodynamics">Second law of thermodynamics</a></h2><p class="rel-desc">The second law of thermodynamics states that the total entropy of an isolated system can never decrease over time.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Second_law_of_thermodynamics">Ada Lovelace and Second law of thermodynamics</a> &middot; <a class="rel-more" href="./Second_law_of_thermodynamics">See more &raquo;</a></p><a id="Sir_Clobery_Noel,_5th_Baronet"></a><h2><a href="./Sir_Clobery_Noel,_5th_Baronet">Sir Clobery Noel, 5th Baronet</a></h2><p class="rel-desc">Sir Clobery Noel, 5th Baronet (c. 1695 - 30 July 1733) was an English politician.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Sir_Clobery_Noel,_5th_Baronet">Ada Lovelace and Sir Clobery Noel, 5th Baronet</a> &middot; <a class="rel-more" href="./Sir_Clobery_Noel,_5th_Baronet">See more &raquo;</a></p><a id="Small_satellite"></a><h2><a href="./Small_satellite">Small satellite</a></h2><p class="rel-desc">Small satellites, miniaturized satellites, or smallsats, are satellites of low mass and size, usually under.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Small_satellite">Ada Lovelace and Small satellite</a> &middot; <a class="rel-more" href="./Small_satellite">See more &raquo;</a></p><a id="Steampunk"></a><h2><a href="./Steampunk">Steampunk</a></h2><p class="rel-desc">Steampunk is a subgenre of science fiction or science fantasy that incorporates technology and aesthetic designs inspired by 19th-century industrial steam-powered machinery.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Steampunk">Ada Lovelace and Steampunk</a> &middot; <a class="rel-more" href="./Steampunk">See more &raquo;</a></p><a id="Stephen_Wolfram"></a><h2><a href="./Stephen_Wolfram">Stephen Wolfram</a></h2><p class="rel-desc">Stephen Wolfram (born August 29, 1959) is a British-American computer scientist, physicist, and businessman.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Stephen_Wolfram">Ada Lovelace and Stephen Wolfram</a> &middot; <a class="rel-more" href="./Stephen_Wolfram">See more &raquo;</a></p><a id="Switzerland"></a><h2><a href="./Switzerland">Switzerland</a></h2><p class="rel-desc">Switzerland, officially the Swiss Confederation, is a sovereign state in Europe.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Switzerland">Ada Lovelace and Switzerland</a> &middot; <a class="rel-more" href="./Switzerland">See more &raquo;</a></p><a id="Sydney_Padua"></a><h2><a href="./Sydney_Padua">Sydney Padua</a></h2><p class="rel-desc">Melina Sydney Padua is a graphic artist and animator based in London, England.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Sydney_Padua">Ada Lovelace and Sydney Padua</a> &middot; <a class="rel-more" href="./Sydney_Padua">See more &raquo;</a></p><a id="The_Difference_Engine"></a><h2><a href="./The_Difference_Engine">The Difference Engine</a></h2><p class="rel-desc">The Difference Engine (1990) is an alternative history novel by William Gibson and Bruce Sterling.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/The_Difference_Engine">Ada Lovelace and The Difference Engine</a> &middot; <a class="rel-more" href="./The_Difference_Engine">See more &raquo;</a></p><a id="The_Guardian"></a><h2><a href="./The_Guardian">The Guardian</a></h2><p class="rel-desc">The Guardian is a British daily newspaper.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/The_Guardian">Ada Lovelace and The Guardian</a> &middot; <a class="rel-more" href="./The_Guardian">See more &raquo;</a></p><a id="The_Information:_A_History,_a_Theory,_a_Flood"></a><h2><a href="./The_Information:_A_History,_a_Theory,_a_Flood">The Information: A History, a Theory, a Flood</a></h2><p class="rel-desc">The Information: A History, a Theory, a Flood is a book by science history writer James Gleick published in March 2011 which covers the genesis of our current information age.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/The_Information:_A_History,_a_Theory,_a_Flood">Ada Lovelace and The Information: A History, a Theory, a Flood</a> &middot; <a class="rel-more" href="./The_Information:_A_History,_a_Theory,_a_Flood">See more &raquo;</a></p><a id="The_New_York_Times"></a><h2><a href="./The_New_York_Times">The New York Times</a></h2><p class="rel-desc">The New York Times (sometimes abbreviated as The NYT or The Times) is an American newspaper based in New York City with worldwide influence and readership.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/The_New_York_Times">Ada Lovelace and The New York Times</a> &middot; <a class="rel-more" href="./The_New_York_Times">See more &raquo;</a></p><a id="The_Right_Honourable"></a><h2><a href="./The_Right_Honourable">The Right Honourable</a></h2><p class="rel-desc">The Right Honourable (The Rt Hon. or Rt Hon.) is an honorific style traditionally applied to certain persons and to certain collective bodies in the United Kingdom, Canada, Australia, New Zealand, Fiji, India, some other Commonwealth realms, the Anglophone Caribbean, Mauritius, and occasionally elsewhere.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/The_Right_Honourable">Ada Lovelace and The Right Honourable</a> &middot; <a class="rel-more" href="./The_Right_Honourable">See more &raquo;</a></p><a id="The_Thrilling_Adventures_of_Lovelace_and_Babbage"></a><h2><a href="./The_Thrilling_Adventures_of_Lovelace_and_Babbage">The Thrilling Adventures of Lovelace and Babbage</a></h2><p class="rel-desc">The Thrilling Adventures of Lovelace and Babbage: The (Mostly) True Story of the First Computer is a steampunk graphic novel written and drawn by Sydney Padua.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/The_Thrilling_Adventures_of_Lovelace_and_Babbage">Ada Lovelace and The Thrilling Adventures of Lovelace and Babbage</a> &middot; <a class="rel-more" href="./The_Thrilling_Adventures_of_Lovelace_and_Babbage">See more &raquo;</a></p><a id="Tom_Stoppard"></a><h2><a href="./Tom_Stoppard">Tom Stoppard</a></h2><p class="rel-desc">Sir Tom Stoppard (born Tom&aacute;&scaron; Straussler; 3 July 1937) is a Czech-born British playwright and screenwriter.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Tom_Stoppard">Ada Lovelace and Tom Stoppard</a> &middot; <a class="rel-more" href="./Tom_Stoppard">See more &raquo;</a></p><a id="Torridon"></a><h2><a href="./Torridon">Torridon</a></h2><p class="rel-desc">Torridon (Scottish Gaelic: Toirbheartan) is a small village in the Northwest Highlands of Scotland.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Torridon">Ada Lovelace and Torridon</a> &middot; <a class="rel-more" href="./Torridon">See more &raquo;</a></p><a id="Tottenham_Hale"></a><h2><a href="./Tottenham_Hale">Tottenham Hale</a></h2><p class="rel-desc">Tottenham Hale is an area of northeast London and part of the London Borough of Haringey.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Tottenham_Hale">Ada Lovelace and Tottenham Hale</a> &middot; <a class="rel-more" href="./Tottenham_Hale">See more &raquo;</a></p><a id="Tunnel_boring_machine"></a><h2><a href="./Tunnel_boring_machine">Tunnel boring machine</a></h2><p class="rel-desc">A tunnel boring machine (TBM), also known as a &quot;mole&quot;, is a machine used to excavate tunnels with a circular cross section through a variety of soil and rock strata.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Tunnel_boring_machine">Ada Lovelace and Tunnel boring machine</a> &middot; <a class="rel-more" href="./Tunnel_boring_machine">See more &raquo;</a></p><a id="United_States_Department_of_Defense"></a><h2><a href="./United_States_Department_of_Defense">United States Department of Defense</a></h2><p class="rel-desc">The Department of Defense (DoD, USDOD, or DOD) is an executive branch department of the federal government of the United States charged with coordinating and supervising all agencies and functions of the government concerned directly with national security and the United States Armed Forces.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/United_States_Department_of_Defense">Ada Lovelace and United States Department of Defense</a> &middot; <a class="rel-more" href="./United_States_Department_of_Defense">See more &raquo;</a></p><a id="United_States_Military_Standard"></a><h2><a href="./United_States_Military_Standard">United States Military Standard</a></h2><p class="rel-desc">A United States defense standard, often called a military standard, &quot;MIL-STD&quot;, &quot;MIL-SPEC&quot;, or (informally) &quot;MilSpecs&quot;, is used to help achieve standardization objectives by the U.S. Department of Defense.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/United_States_Military_Standard">Ada Lovelace and United States Military Standard</a> &middot; <a class="rel-more" href="./United_States_Military_Standard">See more &raquo;</a></p><a id="University_of_Oxford"></a><h2><a href="./University_of_Oxford">University of Oxford</a></h2><p class="rel-desc">The University of Oxford (formally The Chancellor Masters and Scholars of the University of Oxford) is a collegiate research university located in Oxford, England.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/University_of_Oxford">Ada Lovelace and University of Oxford</a> &middot; <a class="rel-more" href="./University_of_Oxford">See more &raquo;</a></p><a id="University_of_Turin"></a><h2><a href="./University_of_Turin">University of Turin</a></h2><p class="rel-desc">The University of Turin (Italian: Universit&agrave; degli Studi di Torino, or often abbreviated to UNITO) is a university in the city of Turin in the Piedmont region of north-western Italy.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/University_of_Turin">Ada Lovelace and University of Turin</a> &middot; <a class="rel-more" href="./University_of_Turin">See more &raquo;</a></p><a id="University_of_Zaragoza"></a><h2><a href="./University_of_Zaragoza">University of Zaragoza</a></h2><p class="rel-desc">The University of Zaragoza, sometimes referred to as Saragossa University (in Spanish: Universidad de Zaragoza) is a university located in Zaragoza, in the Aragon region of Spain.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/University_of_Zaragoza">Ada Lovelace and University of Zaragoza</a> &middot; <a class="rel-more" href="./University_of_Zaragoza">See more &raquo;</a></p><a id="Uterine_cancer"></a><h2><a href="./Uterine_cancer">Uterine cancer</a></h2><p class="rel-desc">Uterine cancer, also known as womb cancer, is any type of cancer that emerges from the tissue of the uterus.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Uterine_cancer">Ada Lovelace and Uterine cancer</a> &middot; <a class="rel-more" href="./Uterine_cancer">See more &raquo;</a></p><a id="Victoria_(UK_TV_series)"></a><h2><a href="./Victoria_(UK_TV_series)">Victoria (UK TV series)</a></h2><p class="rel-desc">Victoria is a television drama series created and principally written by Daisy Goodwin and stars Jenna Coleman as Queen Victoria.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Victoria_(UK_TV_series)">Ada Lovelace and Victoria (UK TV series)</a> &middot; <a class="rel-more" href="./Victoria_(UK_TV_series)">See more &raquo;</a></p><a id="Walter_Isaacson"></a><h2><a href="./Walter_Isaacson">Walter Isaacson</a></h2><p class="rel-desc">Walter Isaacson (born May 20, 1952)Millie Ball, The Times-Picayune, December 11, 2011.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Walter_Isaacson">Ada Lovelace and Walter Isaacson</a> &middot; <a class="rel-more" href="./Walter_Isaacson">See more &raquo;</a></p><a id="Weston_Library"></a><h2><a href="./Weston_Library">Weston Library</a></h2><p class="rel-desc">The Weston Library is part of the Bodleian Library, the main research library of the University of Oxford, reopened within the former New Bodleian Library building on the corner of Broad Street and Parks Road in central Oxford, England.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Weston_Library">Ada Lovelace and Weston Library</a> &middot; <a class="rel-more" href="./Weston_Library">See more &raquo;</a></p><a id="William_Benjamin_Carpenter"></a><h2><a href="./William_Benjamin_Carpenter">William Benjamin Carpenter</a></h2><p class="rel-desc">William Benjamin Carpenter CB FRS (29 October 1813 &ndash; 19 November 1885) was an English physician, invertebrate zoologist and physiologist. He was instrumental in the early stages of the unified University of London.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/William_Benjamin_Carpenter">Ada Lovelace and William Benjamin Carpenter</a> &middot; <a class="rel-more" href="./William_Benjamin_Carpenter">See more &raquo;</a></p><a id="William_Berkeley,_4th_Baron_Berkeley_of_Stratton"></a><h2><a href="./William_Berkeley,_4th_Baron_Berkeley_of_Stratton">William Berkeley, 4th Baron Berkeley of Stratton</a></h2><p class="rel-desc">William Berkeley, 4th Baron Berkeley of Stratton PC, PC (I) (d. 24 March 1741), was a British politician and judge, of the Bruton branch of the Berkeley family.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/William_Berkeley,_4th_Baron_Berkeley_of_Stratton">Ada Lovelace and William Berkeley, 4th Baron Berkeley of Stratton</a> &middot; <a class="rel-more" href="./William_Berkeley,_4th_Baron_Berkeley_of_Stratton">See more &raquo;</a></p><a id="William_Byron,_4th_Baron_Byron"></a><h2><a href="./William_Byron,_4th_Baron_Byron">William Byron, 4th Baron Byron</a></h2><p class="rel-desc">William Byron, 4th Baron Byron (4 January 1669/70 &amp;ndash; 8 August 1736) was an English nobleman, politician, peer, and Gentleman of the Bedchamber to Prince George of Denmark.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/William_Byron,_4th_Baron_Byron">Ada Lovelace and William Byron, 4th Baron Byron</a> &middot; <a class="rel-more" href="./William_Byron,_4th_Baron_Byron">See more &raquo;</a></p><a id="William_Frend_(reformer)"></a><h2><a href="./William_Frend_(reformer)">William Frend (reformer)</a></h2><p class="rel-desc">William Frend (22 November 1757 &ndash; 21 February 1841) was an English clergyman (later Unitarian), social reformer and writer.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/William_Frend_(reformer)">Ada Lovelace and William Frend (reformer)</a> &middot; <a class="rel-more" href="./William_Frend_(reformer)">See more &raquo;</a></p><a id="William_Gibson"></a><h2><a href="./William_Gibson">William Gibson</a></h2><p class="rel-desc">William Ford Gibson (born March 17, 1948) is an American-Canadian speculative fiction writer and essayist widely credited with pioneering the science fiction subgenre known as cyberpunk.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/William_Gibson">Ada Lovelace and William Gibson</a> &middot; <a class="rel-more" href="./William_Gibson">See more &raquo;</a></p><a id="William_King_(physician)"></a><h2><a href="./William_King_(physician)">William King (physician)</a></h2><p class="rel-desc">William King (17 April 1786 &ndash; 19 October 1865) was a British physician and philanthropist from Brighton.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/William_King_(physician)">Ada Lovelace and William King (physician)</a> &middot; <a class="rel-more" href="./William_King_(physician)">See more &raquo;</a></p><a id="William_King-Noel,_1st_Earl_of_Lovelace"></a><h2><a href="./William_King-Noel,_1st_Earl_of_Lovelace">William King-Noel, 1st Earl of Lovelace</a></h2><p class="rel-desc">William King-Noel, 1st Earl of Lovelace FRS (21 February 1805 &amp;ndash; 29 December 1893), known as the Hon.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/William_King-Noel,_1st_Earl_of_Lovelace">Ada Lovelace and William King-Noel, 1st Earl of Lovelace</a> &middot; <a class="rel-more" href="./William_King-Noel,_1st_Earl_of_Lovelace">See more &raquo;</a></p><a id="Women_in_computing"></a><h2><a href="./Women_in_computing">Women in computing</a></h2><p class="rel-desc">Women in computing have shaped the evolution of the industry, with women among the first programmers during the early 20th century.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Women_in_computing">Ada Lovelace and Women in computing</a> &middot; <a class="rel-more" href="./Women_in_computing">See more &raquo;</a></p><a id="Women_in_STEM_fields"></a><h2><a href="./Women_in_STEM_fields">Women in STEM fields</a></h2><p class="rel-desc">Many scholars and policymakers have noted that the fields of science, technology, engineering, and mathematics (STEM fields) have been predominantly male occupations, with historically low participation among women, from their origin in the Age of Enlightenment to the present time.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Women_in_STEM_fields">Ada Lovelace and Women in STEM fields</a> &middot; <a class="rel-more" href="./Women_in_STEM_fields">See more &raquo;</a></p><a id="Women&#039;s_Studies_International_Forum"></a><h2><a href="./Women&#039;s_Studies_International_Forum">Women&#039;s Studies International Forum</a></h2><p class="rel-desc">Women&#039;s Studies International Forum is a bimonthly peer-reviewed academic journal covering feminist research in the area of women&#039;s studies and other disciplines.</p><p class="rel-bottom"><span class="rel-new">New!!: </span><a href="./c/Ada_Lovelace/vs/Women&#039;s_Studies_International_Forum">Ada Lovelace and Women&#039;s Studies International Forum</a> &middot; <a class="rel-more" href="./Women&#039;s_Studies_International_Forum">See more &raquo;</a></p>
+<a id="-Redirects_here:"></a>
+<h2>Redirects here:</h2>
+<p><a href="Ada_Augusta_Byron">Ada Augusta Byron</a>, <a href="Ada_Augusta_Byron,_Countess_of_Lovelace">Ada Augusta Byron, Countess of Lovelace</a>, <a href="Ada_Augusta_Lovelace">Ada Augusta Lovelace</a>, <a href="Ada_Byron">Ada Byron</a>, <a href="Ada_Byron_Lovelace">Ada Byron Lovelace</a>, <a href="Ada_Byron&#039;s_notes_on_the_analytical_engine">Ada Byron&#039;s notes on the analytical engine</a>, <a href="Ada_Byron/notes_on_the_analytical_engine">Ada Byron/notes on the analytical engine</a>, <a href="Ada_King">Ada King</a>, <a href="Ada_King,_Countess_of_Lovelace">Ada King, Countess of Lovelace</a>, <a href="Ada_King-Noel,_Countess_of_Lovelace">Ada King-Noel, Countess of Lovelace</a>, <a href="Ada_Lovelace_Byron">Ada Lovelace Byron</a>, <a href="Ada_Lovelace_Day">Ada Lovelace Day</a>, <a href="Ada_lovelace">Ada lovelace</a>, <a href="Ada,_Countess_Lovelace">Ada, Countess Lovelace</a>, <a href="Ada,_Countess_of_Lovelace">Ada, Countess of Lovelace</a>, <a href="Augusta_A._Lovelace">Augusta A. Lovelace</a>, <a href="Augusta_Ada_Byron">Augusta Ada Byron</a>, <a href="Augusta_Ada_Byron_Countess_of_Lovelace">Augusta Ada Byron Countess of Lovelace</a>, <a href="Augusta_Ada_Byron,_Countess_Of_Lovelace">Augusta Ada Byron, Countess Of Lovelace</a>, <a href="Augusta_Ada_King">Augusta Ada King</a>, <a href="Augusta_Ada_King,_Countess_of_Lovelace">Augusta Ada King, Countess of Lovelace</a>, <a href="Augusta_Ada_King-Noel">Augusta Ada King-Noel</a>, <a href="Augusta_Ada_King-Noel,_Countess_of_Lovelace">Augusta Ada King-Noel, Countess of Lovelace</a>, <a href="Augusta_Ada_Lovelace">Augusta Ada Lovelace</a>, <a href="Augusta_Ada_Lovelace_Award">Augusta Ada Lovelace Award</a>, <a href="Augusta_King">Augusta King</a>, <a href="Augusta_Lovelace">Augusta Lovelace</a>, <a href="Lady_Ada">Lady Ada</a>, <a href="Lady_Ada_Lovelace">Lady Ada Lovelace</a>, <a href="Lady_Lovelace">Lady Lovelace</a>, <a href="Lady_ada_lovelace">Lady ada lovelace</a>.</p>
+
+<a id="-References"></a>
+<h2>References</h2>
+<p>[1] <a href="https://en.wikipedia.org/wiki/Ada_Lovelace" target="_blank">https://en.wikipedia.org/wiki/Ada_Lovelace</a></p>
+
+<div style="clear: both;"></div>
+<!--
+<div>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+	style="display:block"
+	data-ad-format="autorelaxed"
+	data-ad-client="ca-pub-5555190471190823"
+	data-ad-slot="9764273531"></ins>
+<script>
+	(adsbygoogle = window.adsbygoogle || []).push({params: {google_ad_channel: my_google_ad_channel}});
+</script>
+</div>
+-->
+<div style="text-align: center;">
+<div style="text-align: center; margin-left: auto; margin-right: auto; margin-top: 25px;">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Unionpedia Bottom Bonus -->
+<ins class="adsbygoogle"
+	style="display:block"
+	data-ad-client="ca-pub-5555190471190823"
+	data-ad-slot="3364486335"
+	data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({params: {google_ad_channel: my_google_ad_channel}});
+</script>
+</div>
+</div>
+	</div>
+	<div id="footer">
+				<p>Unionpedia is a concept map or semantic network organized like an encyclopedia – dictionary. It gives a brief definition of each concept and its relationships.</p>
+		<p style="font-size: 0.8em;">This is a giant online mental map that serves as a basis for concept diagrams.
+It's free to use and each article or document can be downloaded.
+It's a tool, resource or reference for study, research, education, learning or teaching, that can be used by teachers, educators, pupils or students;
+for the academic world: for school, primary, secondary, high school, middle, technical degree, college, university, undergraduate, master's or doctoral degrees;
+for papers, reports, projects, ideas, documentation, surveys, summaries, or thesis.
+Here is the definition, explanation, description, or the meaning of each significant on which you need information, and a list of their associated concepts as a glossary. Available in English, Spanish, Portuguese, Japanese, Chinese, French, German, Italian, Polish, Dutch, Russian, Arabic, Hindi, Swedish, Ukrainian, Hungarian, Catalan, Czech, Hebrew, Danish, Finnish, Indonesian, Norwegian, Romanian, Turkish, Vietnamese, Korean, Thai, Greek, Bulgarian, Croatian, Slovak, Lithuanian, Filipino, Latvian, Estonian  and  Slovenian. More languages soon.</p>
+		<p style="font-size: 0.8em;">All the information was extracted from <a target="_blank" href="http://www.wikipedia.org/">Wikipedia</a>, and it's available under the <a target="_blank" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Attribution-ShareAlike License</a>.</p>
+		<p style="font-size: 0.8em;">Unionpedia is not endorsed by or affiliated with the Wikimedia Foundation.</p>
+		<p style="font-size: 0.8em;">Google Play, Android and the Google Play logo are trademarks of Google Inc.</p>
+		<p style="font-size: 0.8em;"><a href="./Privacy:">Privacy Policy</a></p>
+	</div>
+</div>
+<div id="header-bar">
+	<div id="tabs-bar">
+		<a href="./Ada_Lovelace" class="open" title="Outgoing relations">Outgoing</a><a href="./i/Ada_Lovelace" title="Incoming relations">Incoming</a>	</div>
+			<div style="float: left; margin-top: 20px; margin-left: 9px; height: 10px; vertical-align: top;">
+		<div style="display: inline-block; margin-top: 3px; font-weight: bold; color: #C00; font-size: 0.8em; margin-right: 5px;">Hey! We are on Facebook now! &raquo;</div>
+		<div class="fb-like" data-href="https://www.facebook.com/Unionpedia" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true" style="display: inline-block; vertical-align: top;"></div>
+	</div>
+		<div id="search-bar">
+
+				<div style="display: inline-block; margin-top: 4px; font-size: 0.8em; ">
+			<a href="https://en.unionpedia.org/Join:" style="display: inline-block; margin-right: 5px;">Create account</a>
+			<a href="https://en.unionpedia.org/Login:" style="display: inline-block; margin-right: 5px;">Log in</a>
+		</div>
+		
+		<input type="text" placeholder="Search" value="" id="text-search"/>
+		<input type="button" value="Search" onclick="javascript:goSearch();"/>
+		<script>
+		function goSearch() {
+			window.location.href = domain+'Search:'+$('#text-search').val();
+		}
+		$('#text-search').on('keypress', function(ev) {
+			if (ev.which == 13) goSearch();
+		});
+		</script>
+	</div>
+
+	<div style="clear: both;"></div>
+</div>
+<div id="header">
+	<div style="text-align: center;">
+	<a href="./"><img src="static/images/logo-u.png" alt="Logo" style="width: 70px; margin: auto 0; margin-top: -20px; opacity: 0.8;"/></a>
+	</div>
+	<ul>
+	<li style="margin: 0; padding: 0; text-align: center;"><a href="./">
+		<img src="static/images/unionpedia_home_2019.png" alt="Unionpedia" title="Unionpedia" style="width: 100%; margin-top: 0px; opacity: 0.9;"/>
+	</a></li>
+	<li style="margin: 0; padding: 0; text-align: center;"><a href="./">
+		<img src="static/images/the_concept_map_home.png" alt="The Concept Map" title="The Concept Map" style="width: 100%; margin-top: -8px; opacity: 0.9;"/>
+	</a></li>
+			<li><a href="./Saved:">Saved concepts</a></li>
+		<li><a href="./Random:">Random page</a></li>
+			<li><a href="./Index:">Index</a></li>
+				</ul>
+
+		<h2 style="height: 0; overflow: hidden; margin-bottom: 0; padding: 0;">&nbsp;</h2>
+	<div style="margin-top: 15px;">
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- Unionpedia Left Responsive -->
+		<ins class="adsbygoogle"
+			 style="display:block"
+			 data-ad-client="ca-pub-5555190471190823"
+			 data-ad-slot="3066731530"
+			 data-ad-format="auto"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({params: {google_ad_channel: my_google_ad_channel}});
+		</script>
+			</div>
+	
+			<h2>Languages</h2>
+		<ul class="list">
+				<li><a href="https://ar.unionpedia.org/آدا_لوفلايس" lang="ar" title="آدا لوفلايس – Arabic">العربية</a></li>
+				<li><a href="https://bg.unionpedia.org/Ада_Лъвлейс" lang="bg" title="Ада Лъвлейс – Bulgarian">Български</a></li>
+				<li><a href="https://ca.unionpedia.org/Ada_Lovelace" lang="ca" title="Ada Lovelace – Catalan">Català</a></li>
+				<li><a href="https://cs.unionpedia.org/Ada_Lovelace" lang="cs" title="Ada Lovelace – Czech">Čeština</a></li>
+				<li><a href="https://da.unionpedia.org/Ada_Lovelace" lang="da" title="Ada Lovelace – Danish">Dansk</a></li>
+				<li><a href="https://de.unionpedia.org/Ada_Lovelace" lang="de" title="Ada Lovelace – German">Deutsch</a></li>
+				<li><a href="https://el.unionpedia.org/Ά&nu;&tau;&alpha;_&Lambda;ά&beta;&lambda;&epsilon;ϊ&sigmaf;" lang="el" title="Ά&nu;&tau;&alpha; &Lambda;ά&beta;&lambda;&epsilon;ϊ&sigmaf; – Greek">Ελληνικά</a></li>
+				<li><a href="https://es.unionpedia.org/Ada_Lovelace" lang="es" title="Ada Lovelace – Spanish">Español</a></li>
+				<li><a href="https://et.unionpedia.org/Ada_Lovelace" lang="et" title="Ada Lovelace – Estonian">Eesti</a></li>
+				<li><a href="https://fi.unionpedia.org/Ada_Lovelace" lang="fi" title="Ada Lovelace – Finnish">Suomi</a></li>
+				<li><a href="https://fr.unionpedia.org/Ada_Lovelace" lang="fr" title="Ada Lovelace – French">Français</a></li>
+				<li><a href="https://he.unionpedia.org/עדה_לאבלייס" lang="he" title="עדה לאבלייס – Hebrew">עברית</a></li>
+				<li><a href="https://hi.unionpedia.org/एडा_लवलेस" lang="hi" title="एडा लवलेस – Hindi">हिन्दी</a></li>
+				<li><a href="https://hr.unionpedia.org/Ada_Lovelace" lang="hr" title="Ada Lovelace – Croatian">Hrvatski</a></li>
+				<li><a href="https://hu.unionpedia.org/Ada_Lovelace" lang="hu" title="Ada Lovelace – Hungarian">Magyar</a></li>
+				<li><a href="https://id.unionpedia.org/Ada_Lovelace" lang="id" title="Ada Lovelace – Indonesian">Bahasa Indonesia</a></li>
+				<li><a href="https://it.unionpedia.org/Ada_Lovelace" lang="it" title="Ada Lovelace – Italian">Italiano</a></li>
+				<li><a href="https://ja.unionpedia.org/エイダ・ラブレス" lang="ja" title="エイダ・ラブレス – Japanese">日本語</a></li>
+				<li><a href="https://ko.unionpedia.org/에이다_러브레이스" lang="ko" title="에이다 러브레이스 – Korean">한국어</a></li>
+				<li><a href="https://lt.unionpedia.org/Ada_Lovelace" lang="lt" title="Ada Lovelace – Lithuanian">Lietuvių</a></li>
+				<li><a href="https://lv.unionpedia.org/Ada_Lavleisa" lang="lv" title="Ada Lavleisa – Latvian">Latviešu</a></li>
+				<li><a href="https://nl.unionpedia.org/Ada_Lovelace" lang="nl" title="Ada Lovelace – Dutch">Nederlands</a></li>
+				<li><a href="https://no.unionpedia.org/Ada_Byron_Lovelace" lang="no" title="Ada Byron Lovelace – Norwegian">Norsk bokmål</a></li>
+				<li><a href="https://pl.unionpedia.org/Ada_Lovelace" lang="pl" title="Ada Lovelace – Polish">Polski</a></li>
+				<li><a href="https://pt.unionpedia.org/Ada_Lovelace" lang="pt" title="Ada Lovelace – Portuguese">Português</a></li>
+				<li><a href="https://ro.unionpedia.org/Ada_Lovelace" lang="ro" title="Ada Lovelace – Romanian">Română</a></li>
+				<li><a href="https://ru.unionpedia.org/Лавлейс,_Ада" lang="ru" title="Лавлейс, Ада – Russian">Русский</a></li>
+				<li><a href="https://sk.unionpedia.org/Ada_Lovelace" lang="sk" title="Ada Lovelace – Slovak">Slovenčina</a></li>
+				<li><a href="https://sl.unionpedia.org/Ada_Lovelace" lang="sl" title="Ada Lovelace – Slovenian">Slovenščina</a></li>
+				<li><a href="https://sv.unionpedia.org/Ada_Lovelace" lang="sv" title="Ada Lovelace – Swedish">Svenska</a></li>
+				<li><a href="https://th.unionpedia.org/เอดา_เลิฟเลซ" lang="th" title="เอดา เลิฟเลซ – Thai">ไทย</a></li>
+				<li><a href="https://tr.unionpedia.org/Ada_Lovelace" lang="tr" title="Ada Lovelace – Turkish">Türkçe</a></li>
+				<li><a href="https://uk.unionpedia.org/Ада_Лавлейс" lang="uk" title="Ада Лавлейс – Ukrainian">Українська</a></li>
+				<li><a href="https://vi.unionpedia.org/Ada_Lovelace" lang="vi" title="Ada Lovelace – Vietnamese">Tiếng Việt</a></li>
+				<li><a href="https://zh.unionpedia.org/愛達&middot;勒芙蕾絲" lang="zh" title="愛達&middot;勒芙蕾絲 – Chinese">中文</a></li>
+				</ul>
+	
+</div>
+
+
+
+<style>
+/* MODAL VIEWS / MODAL WINDOWS */
+.modal {
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+	display: inline-block;
+	background-color: #FFF;
+	margin: 30px auto;
+	margin-top: 100px;
+	-margin-top: 180px;
+	overflow: hidden;
+	position: relative;
+	border-radius: 3px;
+}
+.modal .titlebar {
+	background-color: #E0E0E0;
+	color: #666;
+	padding: 10px 13px;
+}
+.modal .content {
+	padding: 10px;
+}
+.modalBack {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	padding: 15pt;
+	padding-top: 50pt;
+}
+.modalBackShadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.83);
+	opacity: 0.9;
+}
+</style>
+<script>
+function removeModal(modalID, cancelCallback) {
+	$('.modalBack .modal').hide();
+	$('.modalBack').fadeOut(200, function() {
+		$('body').css('overflow', 'scroll');
+		var modal = $('.modalBack .modal').detach();
+		$('#'+modalID).append(modal);
+		$('.modalBack').remove();
+		if (cancelCallback) cancelCallback();
+	});
+}
+function removeModalBuilder(modalID, cancelCallback) {
+	return function() { return removeModal(modalID, cancelCallback); }
+}
+function showModal(modalID, cancelCallback) {
+	$("body").css("overflow", "hidden");
+
+	var back = $('<div class="modalBack" style="z-index: 99999999999998;""></div>');
+	$("body").append(back);
+	back.click(removeModalBuilder(modalID, cancelCallback));
+
+	var backShadow = $('<div class="modalBackShadow"></div>');
+	back.append(backShadow);
+	backShadow.click(removeModalBuilder(modalID, cancelCallback));
+
+	var backTransparent = $('<div class="modalBack" style="z-index: 99999999999999; text-align: center; overflow: auto;"></div>');
+	$("body").append(backTransparent);
+	var modal = $('#'+modalID+' .modal');
+	modal.on('click', function(event) { event.stopPropagation(); });
+	backTransparent.append(modal);
+	backTransparent.click(removeModalBuilder(modalID, cancelCallback));
+	return modal;
+}
+function dontShowFBPopup() {
+	createCookie(window.fbPopupCookie, "closed", 60);
+}
+</script>
+
+<div id="facebookPopupParent" style="display: none;"><div id="facebookPopupFACEBOOK">
+<div class="modal" style="display: block; width: 445px; text-align: left;">
+	<div title="Close" onclick="javascript:removeModal('facebookPopup', dontShowFBPopup);" style="display: inline-block; background: url('static/images/facebook/close.png') no-repeat center center; width: 42px; height: 42px; float: right; cursor: pointer; right: 8px; top: 4px; position: absolute;"></div>
+    <div>
+        <div>
+            <div style="line-height: 40px; padding-bottom: 25px; padding-top: 10px; font-size:28px; background: #3a5897 url(static/images/facebook/bubble-bottom.png) repeat-x 0 100%;">
+                <a style="padding: 12px 0px 10px 22px;" href="https://www.facebook.com/Unionpedia" target="_blank">
+					<img src="static/images/facebook/title.png" alt="facebook">
+				</a>
+                <div style="border-top: 1px solid rgba(255,255,255,0.6); color: #FFF; padding: 22px 0px 22px 22px; font-size: 18px !important; line-height: 1.2em !important; font: 12px/1.2 Helvetica, Arial, sans-serif;">
+					Click <b>"Like"</b><br/>
+					to join Unionpedia.org on Facebook.									</div>
+            </div>
+
+            <div style="padding-bottom:0px; height:90px; margin-top:15px; padding-left:25px;">
+				<div id="facebook-popup" style="z-index:1000;" data-event-listener-id="js-dialog-social-overlay-1" data-event-like="Subscribe" data-ga-skip-trigger="1" data-event-dislike="Unsubscribe"  data-ga-category="FacebookGroupOverlay" data-ga-action="Subscribe" class="fb-like" data-href="https://www.facebook.com/Unionpedia" data-width="400" data-layout="standard" data-action="like" data-show-faces="true" data-share="false"></div>
+            </div>
+        </div>
+        <div style="background-color: #DDD; padding: 16px; padding-bottom: 20px; font: 12px/1.2 Helvetica, Arial, sans-serif; text-align: center;">
+            <a href="#" onclick="javascript:removeModal('facebookPopup', dontShowFBPopup); return false;" style="display: inline-block; font-size:14px; text-decoration:none; border-bottom:1px dashed #000; color: #333;">
+								Great! I'm already part of Unionpedia!
+			</a>
+						<a href="#" onclick="javascript:removeModal('facebookPopup', dontShowFBPopup); return false;" style="display: inline-block; font-size:14px; text-decoration:none; -border-bottom:1px dashed #000; color: #888; margin-left: 50px;">
+				No, thank you!
+			</a>
+			        </div>
+    </div>
+</div>
+</div><div id="facebookPopup"><div class="modal" style="display: block; width: 445px; text-align: left;">
+	<div style="background-color: red;">
+		<div title="Close" onclick="javascript:removeModal('facebookPopup', dontShowFBPopup);" style="display: inline-block; background: url('static/images/instagram/close.png') no-repeat center center; width: 42px; height: 42px; float: right; cursor: pointer; right: 8px; top: 7px; position: absolute;"></div>
+    
+        <div>
+            <div style="-line-height: 28px; padding-bottom: 0px; padding-top: 5px; -font-size:28px; background-color: #FFF;">
+                <a style="display: block; padding: 3px 0px 7px 20px; border-bottom: 1px solid #CCC;" href="https://www.instagram.com/unionpedia/" target="_blank">
+					<img src="static/images/unionpedia_home_2019.png" alt="instagram" style="height: 38px;">
+				</a>
+            </div>
+        </div>
+		
+		<div style="clear: both;"></div>
+		
+	</div>
+	<a style="color: #333; text-decoration: none;" href="https://www.instagram.com/unionpedia/" target="_blank">
+	<div style="padding: 20px; background-color: #DDEEFF; text-align: center;">
+		<div style="color: #222; color: #05E; font-size: 18px !important; line-height: 1.2em !important; font: 12px/1.2 Helvetica, Arial, sans-serif;">
+			Select the topic you are interested in:		</div>
+	</div>
+	</a>
+	<div style="padding: 8px 20px; margin-bottom: 10px; -text-align: center;">
+	
+						<div style="text-align: center; margin: 15px 0;">
+					<a class="follow_ig_button" style="display: inline-block; background-color: #0095f6; color: #FFF; border-radius: 3px; text-decoration: none; padding: 12px 20px; font-size: 17px;" href="British_Computer_Society">
+						British Computer Society					</a>
+				</div>
+							<div style="text-align: center; margin: 15px 0;">
+					<a class="follow_ig_button" style="display: inline-block; background-color: #0095f6; color: #FFF; border-radius: 3px; text-decoration: none; padding: 12px 20px; font-size: 17px;" href="Mathematics">
+						Mathematics					</a>
+				</div>
+							<div style="text-align: center; margin: 15px 0;">
+					<a class="follow_ig_button" style="display: inline-block; background-color: #0095f6; color: #FFF; border-radius: 3px; text-decoration: none; padding: 12px 20px; font-size: 17px;" href="Baron_Lovelace">
+						Baron Lovelace					</a>
+				</div>
+							<div style="text-align: center; margin: 15px 0;">
+					<a class="follow_ig_button" style="display: inline-block; background-color: #0095f6; color: #FFF; border-radius: 3px; text-decoration: none; padding: 12px 20px; font-size: 17px;" href="Conceiving_Ada">
+						Conceiving Ada					</a>
+				</div>
+							<div style="text-align: center; margin: 15px 0;">
+					<a class="follow_ig_button" style="display: inline-block; background-color: #0095f6; color: #FFF; border-radius: 3px; text-decoration: none; padding: 12px 20px; font-size: 17px;" href="Computer">
+						Computer					</a>
+				</div>
+			
+	</div>
+	<div>
+	
+        <div style="background-color: #DDD; padding: 16px; padding-bottom: 20px; font: 12px/1.2 Helvetica, Arial, sans-serif; text-align: center;">
+            						<a href="#" onclick="javascript:removeModal('facebookPopup', dontShowFBPopup); return false;" style="display: inline-block; font-size:14px; text-decoration:none; -border-bottom:1px dashed #000; color: #888;">
+				No, thanks!
+			</a>
+			        </div>
+    </div>
+</div>
+</div></div>
+<script>
+function createCookie(name,value,days) {
+	var expires = "";
+	if (days) {
+		var date = new Date();
+		date.setTime(date.getTime()+(days*24*60*60*1000));
+		expires = "; expires="+date.toGMTString();
+	}
+	document.cookie = name+"="+value+expires+"; path=/";
+}
+function readCookie(name) {
+	var nameEQ = name + "=", ca = document.cookie.split(';');
+	for(var i=0;i < ca.length;i++) {
+		var c = ca[i];
+		while (c.charAt(0)==' ') c = c.substring(1,c.length);
+		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+	}
+	return null;
+}
+function eraseCookie(name) {
+	createCookie(name,"",-1);
+}
+function preloadImages() {
+	var images = new Array();
+	for (i = 0; i < preloadImages.arguments.length; i++) {
+		images[i] = new Image();
+		images[i].src = preloadImages.arguments[i];
+	}
+}
+preloadImages(
+	"static/images/facebook/title.png",
+	"static/images/facebook/close.png",
+	"static/images/facebook/bubble-bottom.png",
+	"static/images/instagram/title.png",
+	"static/images/instagram/close.png",
+	"static/images/instagram/unionpedia.jpg"
+);
+function showFBPopup() {
+			setTimeout(function() {
+		showModal("facebookPopup", dontShowFBPopup);
+	}, parseInt((40+Math.random()*30)*1000.0));
+}
+var fbDivModified = false;
+var documentReady = false;
+$(document).ready(function() {
+	window.documentReady = true;
+		showFBPopup();
+});
+var fbPopupCookie = "facebookPopup";
+//eraseCookie(fbPopupCookie);
+if (!readCookie(fbPopupCookie)) {
+	$("#facebook-popup").bind("DOMSubtreeModified", function() {
+		if (!fbDivModified) {
+			fbDivModified = true;
+					}
+	});
+}
+</script>
+<script>
+// Smooth scrolling
+var $root = $('html, body');
+$('a[href*=#]').click(function(){
+	var href = $.attr(this, 'href')
+	var hash = href.substr(href.indexOf("#")+1);
+    $root.animate({
+        scrollTop: $('[id="' + hash + '"]').offset().top - 7    }, 500, function () {
+        window.location.hash = hash;
+    });
+    return false;
+});
+</script>
+
+<a href="#" id="scrollToTop"></a>
+<style>
+#scrollToTop{
+	position: fixed;
+
+		width: 55px;
+	height: 55px;
+	bottom: 10px;
+	right: 10px;
+	
+	display: none;
+	border-radius: 50%;
+	box-shadow: 1px 1px 7px rgba(0,50,150,0.3);
+
+	background-color: rgba(0,120,205,1);
+	text-decoration: none;
+
+	background-image: url(static/images/arrow-top.png);
+	background-size: 40%;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	opacity: 0.7;
+}
+#scrollToTop:hover{
+	text-decoration:none;
+}
+</style>
+
+<script>
+$(document).ready(function(){
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 265) {
+			$('#scrollToTop').fadeIn(400);
+		} else {
+			$('#scrollToTop').fadeOut(400);
+		}
+	});
+	$('#scrollToTop').click(function(){
+		$('html, body').animate({scrollTop : 0},400);
+		return false;
+	});
+});
+</script>
+
+</body>
+<script src="ads.js/ads.js" type="text/javascript"></script>
+<script type="text/javascript">
+if (document.getElementById('rbiJmWFW8hYmnGheS')){
+	rbiJmWFW8hYmnGheS = 'No';
+} else {
+	rbiJmWFW8hYmnGheS = 'Yes';
+}
+
+if (typeof ga !=='undefined'){
+	ga('send','event','Blocking Ads',rbiJmWFW8hYmnGheS,{'nonInteraction':1});
+	} else if(typeof _gaq !=='undefined'){
+	_gaq.push(['_trackEvent','Blocking Ads',rbiJmWFW8hYmnGheS,undefined,undefined,true]);
+	}
+</script>
+</html>
