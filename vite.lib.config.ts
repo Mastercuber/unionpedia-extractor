@@ -8,7 +8,7 @@ export default defineConfig({
     dts()
   ],
   build: {
-    target: 'modules',
+    target: 'esnext',
     outDir: 'dist',
     lib: {
       entry: resolve(__dirname, 'src', 'extractor.cheerio.ts'),
